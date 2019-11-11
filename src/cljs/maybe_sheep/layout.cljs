@@ -35,11 +35,11 @@
      [:h1 "The items of maybe-sheep"]
      (for [item content-list]
        (let [kw (first item)
-             data (second item)]
+             {:keys [title url prev]} (second item)]
          ^{:key kw}
          [:div
-          [:div (data :title)]
-          [:a {:href (:url data)}]]))]))
+          [:div title]
+          [:a {:href url} "Read"]]))]))
 
 
 (defn post-page []

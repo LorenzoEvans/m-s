@@ -16,7 +16,7 @@
    [:meta {:charset "utf-8"}]
    [:meta {:name "viewport"
            :content "width=device-width, initial-scale=1"}]
-   (include-css "https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css")])
+   (include-css "/css/site.css" "https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css")])
 
 (defn loading-page []
   (html5
