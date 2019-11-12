@@ -12,8 +12,8 @@
     [:span.bg-washed-green
      [:h1.avenir.washed-red "Welcome to maybe-sheep"]
      [:ul
-      [:li [:a {:href (path-for :posts)} "Posts"]]
-      [:li [:a {:href "/broken/link"} "Broken link"]]]]))
+      [:li [:a.no-underline.avenir {:href (path-for :posts)} "Posts"]]
+      [:li [:a.no-underline.avenir {:href "/broken/link"} "Broken link"]]]]))
 
 
 (def content-list (get-in content-store [:content]))
