@@ -23,31 +23,30 @@
 
 (defn posts-page []
   (fn []
-    [:span.w-75.flex.flex-column.justify-around.overflow-scroll.content-center.items-center.bl.br.bw1.b--black
-     [:h1.w5.tc "Maybe Posts"]
+    [:span.w-75.flex.flex-column.justify-around.overflow-scroll.content-center.items-center.bl.br.bw2.b--black
+     [:h1.w5.tc.avenir "Maybe Posts"]
      (for [item content-list]
        (let [kw (first item)
              {:keys [title url prev]} (second item)]
          ^{:key kw}
-         [:div.w-100.ba.b--black
-          [:div.avenir.f3.fw5.navy.truncate.w3 title]
-          [:a {:href (path-for :post {:post-id url})
-               :on-click #(swap! current-post assoc :current-post kw)} "Read"]]))]))
+         [:div.w-100.flex.flex-row.justify-center
+          [:a.avenir.link.dim.navy {:href (path-for :post {:post-id url})
+               :on-click #(swap! current-post assoc :current-post kw)} title]]))]))
 
 
 (defn post-page []
   (fn []
-    [:div 
+    [:div.w-75 
        (let [cp @current-post
              title (get-in content-list [(:current-post cp) :title])
              prev (get-in content-list [(:current-post cp) :prev])
              full-article (get-in content-list [(:current-post cp) :full-article])
              ]
-         [:span.main
+         [:span.flex.flex-column.justify-center.content-center.items-center
           [:h1.avenir title]
           [:div prev]
-          [:div full-article]
-          [:p [:a {:href (path-for :posts)} "Back to the list of items"]]])]))
+          [:div.flex.justify-center full-article]
+          [:p [:a.avenir.link.dim.navy {:href (path-for :posts)} "Back to the list of items"]]])]))
 
 
 (defn about-page []
