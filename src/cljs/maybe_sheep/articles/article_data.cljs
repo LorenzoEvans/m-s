@@ -5,7 +5,7 @@
 
 
 (defn how-fp-data []
-  [:div.avenir.bg-near-white.flex.flex-column.pa4 
+  [:div.avenir.bg-near-white.flex.flex-column.pa4.w-75.justify-center.ba.b--black.bw2 
    [:div.flex.flex-row.flex-wrap
     [:div
      [:header.self-center  "How I Ended Up A Functional Programmer"]

@@ -9,8 +9,8 @@
 
 (defn home-page []
   (fn []
-    [:span.w-50
-     [:h1.avenir.washed-red.f2 "Welcome to maybe-sheep"]]))
+    [:div.w-75.bl.br.b--black.bw2
+     [:h1.avenir.navy.f2.tc "Maybe Sheep"]]))
 
 
 (def content-list (get-in content-store [:content]))

@@ -9,6 +9,7 @@
    [reagent.session :as session]
    [reitit.frontend :as reitit]
    [clerk.core :as clerk]
+   [maybe-sheep.layout :refer [content-list]]
    [accountant.core :as accountant]))
 
 ;; -------------------------
@@ -17,6 +18,8 @@
 
 ;; -------------------------
 ;; Page components
+
+(js/console.log (count content-list))
 
 ;; -------------------------
 ;; Translate routes -> page components
@@ -29,37 +32,38 @@
     :post #'post-page))
 
 
+(def current-post
+  (atom {:current-post nil}))
+
+
+@current-post
+
 ;; -------------------------
 ;; Page mounting component
 
 (defn current-page []
   (fn []
     (let [page (:current-page (session/get :route))]
-      [:div.moon-gray.vh-100.vw-100.ba.bw1.flex.flex-row.justify-between.bg-image
-            [:div.flex.flex-column.justify-around
-             [:span.ma1 [:a.grow.no-underline.avenir.navy.f2.hover-gray.dim {:href (path-for :index)} "Home"]]
-             [:span.ma1 [:a.grow.no-underline.avenir.navy.f2.hover-gray.dim {:href (path-for :about)} "About"]]
-             [:span.ma1 [:a.grow.no-underline.avenir.navy.f2.hover-gray.dim {:href (path-for :posts)} "Posts"]]]
+      [:div.moon-gray.vh-100.vw-100.flex.flex-row.justify-between.bg-image.mr2
+       [:div.flex.flex-column.justify-around.vh-100
+        [:span.ma3.bb.bw2.b--dark-gray [:a.grow.no-underline.avenir.navy.f2.hover-gray.dim {:href (path-for :index)} "Home"]]
+        [:span.ma3.bb.bw2.b--dark-gray [:a.grow.no-underline.avenir.navy.f2.hover-gray.dim {:href (path-for :about)} "About"]]
+        [:span.ma3.bb.bw2.b--dark-gray [:a.grow.no-underline.avenir.navy.f2.hover-gray.dim {:href (path-for :posts)} "Posts"]]]
        [page]
-       [:section.pa3.pa3-l.black-70.bt.b--black-10.avenir.flex.flex-column.w-25.justify-center
-        [:div.mb4-l.flex.justify-center
-         [:div.flex.flex-column.flex-wrap.justify-around
-          [:h1.f6.fw6.mb4 "Studios"]
-          [:article.fl.w-50.dib-ns.w-auto-ns.mr3-m.mr4-l.mb3.pr2.pr0-ns
-           [:h4.f5.f4-l.fw6 "SF"]
-           [:span.f7.f6-l.db.black-70 "Larkin St"]
-           [:span.f7.f6-l.black-70 "San Fran, Ca, zipcode"]
-           [:a.f6.db.fw6.pv3.black-70.link.dim "A link here"]]
-          [:article.fl.w-50.dib-ns.w-auto-ns.mr3-m.mr4-l.mb3.pr2.pr0-ns
-           [:h4.f5.f4-l.fw6 "SF"]
-           [:span.f7.f6-l.db.black-70 "Larkin St"]
-           [:span.f7.f6-l.black-70 "San Fran, Ca, zipcode"]
-           [:a.f6.db.fw6.pv3.black-70.link.dim "A link here"]]
-          [:article.fl.w-50.dib-ns.w-auto-ns.mr3-m.mr4-l.mb3.pr2.pr0-ns
-           [:h4.f5.f4-l.fw6 "SF"]
-           [:span.f7.f6-l.db.black-70 "Larkin St"]
-           [:span.f7.f6-l.black-70 "San Fran, Ca, zipcode"]
-           [:a.f6.db.fw6.pv3.black-70.link.dim "A link here"]]]]]])))
+       [:div.flex.flex-column
+        (for [item (take-last 3 (shuffle content-list))]   
+          (let [title (:title (second item))
+                url  (:url (second item))
+                prev (:prev (second item))]
+            ^{:key (first item)} 
+            [:section.pa2.light-gray.bt.b--near-white.bw2.avenir.vh-100
+             [:div.flex.flex-column-reverse
+              [:article.fl.dib-ns.w-100.ba.br2.b--dark-gray.bg-near-black.bw2.light-gray
+               [:h4.f4-l.fw4.light-gray.pa1.w5.truncate title]
+               [:span.f7.f6-l.dib-ns.light-gray.pa2 "Larkin St"]
+               [:span.f7.f6-l.light-gray.pa2 "San Fran, Ca, zipcode"]
+               [:a.f6.dib-ns.fw6.pa2.pv3.light-gray.pa2.link.dim {:href (path-for :post {:post-id url})
+                                                                  :on-click #(swap! current-post assoc :current-post (first item))} "Read"]]]]))]])))
 
 ;; -------------------------
 ;; Initialize app

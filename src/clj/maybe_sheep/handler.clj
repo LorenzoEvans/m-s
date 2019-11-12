@@ -21,7 +21,7 @@
 (defn loading-page []
   (html5
    (head)
-   [:body.vh-100.vw-100 {}
+   [:body.vh-100.vw-100 
     mount-target
     (include-js "/js/app.js")]))
 
