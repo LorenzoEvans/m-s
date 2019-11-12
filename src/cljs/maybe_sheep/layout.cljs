@@ -15,9 +15,7 @@
 
 (def content-list (get-in content-store [:content]))
 
-(def current-post
-  (atom {:current-post nil}))
-
+(def current-post (atom {:current-post nil}))
 
 @current-post
 
@@ -32,7 +30,6 @@
          [:div.w-100.flex.flex-row.justify-center
           [:a.avenir.link.dim.navy {:href (path-for :post {:post-id url})
                :on-click #(swap! current-post assoc :current-post kw)} title]]))]))
-
 
 (defn post-page []
   (fn []

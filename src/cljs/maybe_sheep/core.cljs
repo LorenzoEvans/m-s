@@ -61,8 +61,9 @@
               [:article.fl.dib-ns.w-100.ba.br2.b--dark-gray.bg-near-black.bw2.light-gray
                [:h4.f5.fw4.light-gray.pa1 title]
                [:span.f7.f6-l.light-gray.pa1 prev]
-               [:a.f6.dib-ns.fw6.pa2.pv3.light-gray.pa2.link.dim {:href (path-for :post {:post-id url})
-                                                                  :on-click #(swap! current-post assoc :current-post (first item))} "Read"]]]]))]])))
+               [:a.f6.dib-ns.fw6.pa2.pv3.light-gray.pa2.link.dim 
+                {:href (path-for :post {:post-id url})
+                 :on-click #(swap! current-post assoc :current-post (first item))} "Read"]]]]))]])))
 
 ;; -------------------------
 ;; Initialize app
