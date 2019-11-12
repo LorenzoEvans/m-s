@@ -32,7 +32,7 @@
 (defn posts-page []
   (fn []
     [:span.main
-     [:h1 "The items of maybe-sheep"]
+     [:h1 "Maybe Posts"]
      (for [item content-list]
        (let [kw (first item)
              {:keys [title url prev]} (second item)]
