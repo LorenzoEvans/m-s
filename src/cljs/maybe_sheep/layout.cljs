@@ -39,7 +39,7 @@
          ^{:key kw}
          [:div
           [:div title]
-          [:a {:href url} "Read"]]))]))
+          [:a {:href (path-for :post {:post-id url})} "Read"]]))]))
 
 
 (defn post-page []

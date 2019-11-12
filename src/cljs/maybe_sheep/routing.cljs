@@ -1,5 +1,6 @@
 (ns maybe-sheep.routing
-  (:require [reitit.frontend :as r]))
+  (:require [reitit.frontend :as r]
+            [maybe-sheep.articles.article-content :refer [content-store]]))
 
 (def router
   (r/router
