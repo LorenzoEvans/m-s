@@ -23,14 +23,14 @@
 
 (defn posts-page []
   (fn []
-    [:span.main
-     [:h1 "Maybe Posts"]
+    [:span.w-75.flex.flex-column.justify-around.overflow-scroll.content-center.items-center.bl.br.bw1.b--black
+     [:h1.w5.tc "Maybe Posts"]
      (for [item content-list]
        (let [kw (first item)
              {:keys [title url prev]} (second item)]
          ^{:key kw}
-         [:div
-          [:div.avenir.f3.fw5.navy title]
+         [:div.w-100.ba.b--black
+          [:div.avenir.f3.fw5.navy.truncate.w3 title]
           [:a {:href (path-for :post {:post-id url})
                :on-click #(swap! current-post assoc :current-post kw)} "Read"]]))]))
 
@@ -51,5 +51,5 @@
 
 
 (defn about-page []
-  (fn [] [:span.main
+  (fn [] [:span.w-75
           [:h1 "About maybe-sheep"]]))
