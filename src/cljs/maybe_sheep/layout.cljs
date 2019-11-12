@@ -45,7 +45,7 @@
          [:span.flex.flex-column.justify-center.content-center.items-center
           [:h1.avenir title]
           [:div prev]
-          [:div.flex.justify-center full-article]
+          [:div.flex.justify-center.article-height full-article]
           [:p [:a.avenir.link.dim.navy {:href (path-for :posts)} "Back to the list of items"]]])]))
 
 
