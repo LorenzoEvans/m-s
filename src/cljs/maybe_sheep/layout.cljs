@@ -9,25 +9,20 @@
 
 (defn home-page []
   (fn []
-    [:span.main
-     [:h1.avenir "Welcome to maybe-sheep"]
+    [:span.bg-washed-green
+     [:h1.avenir.washed-red "Welcome to maybe-sheep"]
      [:ul
-      [:li [:a {:href (path-for :posts)} "Items of maybe-sheep"]]
+      [:li [:a {:href (path-for :posts)} "Posts"]]
       [:li [:a {:href "/broken/link"} "Broken link"]]]]))
 
 
 (def content-list (get-in content-store [:content]))
 
+(def current-post
+  (atom {:current-post nil}))
 
-; (defn items-page []
-;   (fn []
-;     [:span.main
-;      [:h1 "The items of maybe-sheep"]
-;      [:ul (map (fn [content-list]
-;                  [:li {:name (:title content-list) :key (str "item-" item-id)}
-;                   [:a {:href (path-for :post {:post-id item-id})} "Item: " item-id]])
-;                (range 1 60))]]))
 
+@current-post
 
 (defn posts-page []
   (fn []
@@ -39,16 +34,23 @@
          ^{:key kw}
          [:div
           [:div title]
-          [:a {:href (path-for :post {:post-id url})} "Read"]]))]))
+          [:a {:href (path-for :post {:post-id url})
+               :on-click #(swap! current-post assoc :current-post kw)} "Read"]]))]))
 
 
 (defn post-page []
   (fn []
-    (let [routing-data (session/get :route)
-          item (get-in routing-data [:route-params :post-id])]
-      [:span.main
-       [:h1 (str "Item " item " of maybe-sheep")]
-       [:p [:a {:href (path-for :posts)} "Back to the list of items"]]])))
+    [:div 
+       (let [cp @current-post
+             title (get-in content-list [(:current-post cp) :title])
+             prev (get-in content-list [(:current-post cp) :prev])
+             full-article (get-in content-list [(:current-post cp) :full-article])
+             ]
+         [:span.main
+          [:h1 title]
+          [:div prev]
+          [:div full-article]
+          [:p [:a {:href (path-for :posts)} "Back to the list of items"]]])]))
 
 
 (defn about-page []

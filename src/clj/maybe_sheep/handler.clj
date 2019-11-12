@@ -6,7 +6,7 @@
    [config.core :refer [env]]))
 
 (def mount-target
-  [:div#app
+  [:div#app.ba.b--black.vh-100.vw-100
    [:h2 "Welcome to maybe-sheep"]
    [:p "please wait while Figwheel is waking up ..."]
    [:p "(Check the js console for hints if nothing exciting happens.)"]])
@@ -21,7 +21,7 @@
 (defn loading-page []
   (html5
    (head)
-   [:body {:class "body-container"}
+   [:body.vh-100.vw-100.avenir 
     mount-target
     (include-js "/js/app.js")]))
 
