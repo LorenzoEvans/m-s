@@ -9,11 +9,8 @@
 
 (defn home-page []
   (fn []
-    [:span.bg-washed-green
-     [:h1.avenir.washed-red "Welcome to maybe-sheep"]
-     [:ul
-      [:li [:a.no-underline.avenir {:href (path-for :posts)} "Posts"]]
-      [:li [:a.no-underline.avenir {:href "/broken/link"} "Broken link"]]]]))
+    [:span.w-50
+     [:h1.avenir.washed-red "Welcome to maybe-sheep"]]))
 
 
 (def content-list (get-in content-store [:content]))

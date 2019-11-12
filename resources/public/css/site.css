@@ -32,3 +32,8 @@ a {
 a:hover {
   text-decoration: none;
 }
+
+
+.bg-image {
+  background-image: url();
+}
