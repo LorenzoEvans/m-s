@@ -10,7 +10,7 @@
 (defn home-page []
   (fn []
     [:span.w-50
-     [:h1.avenir.washed-red "Welcome to maybe-sheep"]]))
+     [:h1.avenir.washed-red.f2 "Welcome to maybe-sheep"]]))
 
 
 (def content-list (get-in content-store [:content]))
@@ -30,7 +30,7 @@
              {:keys [title url prev]} (second item)]
          ^{:key kw}
          [:div
-          [:div title]
+          [:div.avenir.f3.fw5.navy title]
           [:a {:href (path-for :post {:post-id url})
                :on-click #(swap! current-post assoc :current-post kw)} "Read"]]))]))
 
@@ -44,7 +44,7 @@
              full-article (get-in content-list [(:current-post cp) :full-article])
              ]
          [:span.main
-          [:h1 title]
+          [:h1.avenir title]
           [:div prev]
           [:div full-article]
           [:p [:a {:href (path-for :posts)} "Back to the list of items"]]])]))
