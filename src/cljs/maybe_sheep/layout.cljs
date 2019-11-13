@@ -40,6 +40,7 @@
              full-article (get-in content-list [(:current-post cp) :full-article])
              ]
          [:span.flex.flex-column.justify-center.content-center.items-center
+          (js/console.log title)
           [:h1.avenir title]
           [:div prev]
           [:div.flex.justify-center.article-height full-article]

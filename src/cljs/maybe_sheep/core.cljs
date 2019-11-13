@@ -3,7 +3,8 @@
    [maybe-sheep.layout :refer [home-page
                                posts-page
                                post-page
-                               about-page]]
+                               about-page
+                               current-post]]
    [maybe-sheep.routing :refer [path-for router]]
    [reagent.core :as reagent :refer [atom]]
    [reagent.session :as session]
@@ -32,11 +33,11 @@
     :post #'post-page))
 
 
-(def current-post
-  (atom {:current-post nil}))
+; (def current-post
+;   (atom {:current-post nil}))
 
 
-@current-post
+; @current-post
 
 ;; -------------------------
 ;; Page mounting component
@@ -49,21 +50,7 @@
         [:span.ma3.bb.bw2.b--dark-gray [:a.grow.no-underline.avenir.navy.f2.hover-gray.dim {:href (path-for :index)} "Home"]]
         [:span.ma3.bb.bw2.b--dark-gray [:a.grow.no-underline.avenir.navy.f2.hover-gray.dim {:href (path-for :about)} "About"]]
         [:span.ma3.bb.bw2.b--dark-gray [:a.grow.no-underline.avenir.navy.f2.hover-gray.dim {:href (path-for :posts)} "Posts"]]]
-       [page]
-       [:div.flex.flex-column.w-33.vh-100
-        (for [item (take-last 3 (shuffle content-list))]   
-          (let [title (:title (second item))
-                url  (:url (second item))
-                prev (:prev (second item))]
-            ^{:key (first item)} 
-            [:section.pa2.light-gray.bt.b--near-white.bw2.avenir.vh-100
-             [:div.flex.flex-column
-              [:article.fl.dib-ns.w-100.ba.br2.b--dark-gray.bg-near-black.bw2.light-gray
-               [:h4.f5.fw4.light-gray.pa1 title]
-               [:span.f7.f6-l.light-gray.pa1 prev]
-               [:a.f6.dib-ns.fw6.pa2.pv3.light-gray.pa2.link.dim 
-                {:href (path-for :post {:post-id url})
-                 :on-click #(swap! current-post assoc :current-post (first item))} "Read"]]]]))]])))
+       [page]])))
 
 ;; -------------------------
 ;; Initialize app
