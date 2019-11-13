@@ -20,7 +20,6 @@
 ;; -------------------------
 ;; Page components
 
-(js/console.log (count content-list))
 
 ;; -------------------------
 ;; Translate routes -> page components
