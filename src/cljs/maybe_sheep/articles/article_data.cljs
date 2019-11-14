@@ -5,14 +5,18 @@
 
 
 (defn how-fp-data []
-  [:div.avenir.bg-near-white.flex.flex-column.pa4.justify-center.ba.b--black.bw2.content-center.items-center.self-center.overflow-auto.h-100.w-100
-   [:div.flex.flex-row.flex-wrap
-    [:div
-     [:header.self-center  "How I Ended Up A Functional Programmer"]
-     [:p.f3.fw6.navy.bb.bw2 "How a student taking Lambda's Web Development course ended up staying up extra late after class to read about Haskell."]]]
-   [:div.flex.flex-column.bg-near-white.w-75.overflow-scroll
-    [:p.lh-title.f3.fw6.light-purple "I recall this moment fondly."]
-    [:p.lh-copy "I was working through DOM manipulation at Lambda, getting elements by Id, writing markdown parsers in code challenges, and constantly forgetting to initialize my iterator variable, undergoing the general struggles of learning JavaScript."]
-    [:p.lh-copy "To be quite honest, I'd developed (pun intended) a bit of rancor towards the language, one that was perhaps stoked by the spectre of the industry, Imposter Syndrome, and the long standing Dunning-Kruger effect."]
-    [:p.lh-copy "Nevertheless, I kept running into the same sort of problem: the things I expected to work didn't and things I expected to work did, I was tripping over type coercion left and right, being reminded that this wasn't defined, and started to ask questions. To Google. The answers I found were interesting, but perplexing, with words like mutable state and static types and functional programming being strewn about."]
-    [:p.lh-copy "Naturally, I decided to take a look into this when I had the time, and spent a few weeks or months progressing with JavaScript, conquering old frustrations and meeting new ones, all the while hearing the refrain of Stack Overflow responses in the back of my ear, as if on loop in the dark corners of my mind."]]])
+[:p.avenir.flex.flex-column.pa4.justify-around.content-center.items-center.self-center
+ [:div.flex.flex-column.h-75
+  [:p.f3.fw6.navy.bb.bw2 "Q: Why would a student taking Lambda's Web Development course stay up extra late after class to read about Haskell?"]
+  [:p.lh-title.f3.fw6.silver "A: Well, let's dig in."]
+  [:p.lh-title.f4.fw6.silver "Once upon a time..."]
+  [:div.lh-solid 
+   [:p.lh-copy.near-black "I was working through DOM manipulation at Lambda, getting elements by Id, writing markdown parsers in code challenges, and constantly forgetting to initialize my iterator variable, undergoing the general struggles of learning JavaScript."]
+   [:p.lh-copy.near-black "To be quite honest, I'd developed (pun intended) a bit of rancor towards the language, one that was perhaps stoked by the spectre of the industry, Imposter Syndrome, and the long standing Dunning-Kruger effect."]
+   [:p.lh-copy.near-black "Nevertheless, I kept running into the same sort of problem: the things I expected to work didn't and things I expected to work did, I was tripping over type coercion left and right, being reminded that this wasn't defined (or forgetting to bind it), and the event loop still boggles me. So, naturally, I started to ask questions. To Google. The answers I found were interesting, but perplexing, with words like mutable state and static types, and pure functions being strewn about."]
+   [:p.lh-copy.near-black "I decided that I wanted to take a look into this when I had the time, and spent a few weeks or months progressing with JavaScript, conquering old frustrations and meeting new ones, all the while hearing the refrain of Stack Overflow responses in the back of my ear, as if on loop in the dark corners of my mind."]
+   [:blockquote.bg-animate.hover-animate.hover-bg-washed-red.hover-purple.pa1.f2.dark-gray "FP will save you (save you...(save you...))"]
+   [:p.lh-copy.near-black "One night, as I was working on my first todo app with Bootstrap, maybe calculator, I was scrolling through twitter, and spied some of the strangest code I'd ever seen, I didn't know what was going on at all."]
+   [:blockquote.f-subheadline.bg-animate.hover-animate.hover-bg-washed-red.hover-purple.pa1.dark-gray "main :: IO ()"]
+   [:p.lh-copy.near-black "There was more, but something about that line of code seduced me, and I immediately had to find out what it was. As you've probably guessed by now, it was Haskell, a strictly typed, purely functional language."] 
+   [:p.lh-copy.near-black "It was love at first sight. I started learning me a Haskell for great good. I was intoxicated."]]]])
