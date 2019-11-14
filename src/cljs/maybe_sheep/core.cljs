@@ -45,10 +45,10 @@
   (fn []
     (let [page (:current-page (session/get :route))]
       [:div.moon-gray.vh-100.flex.flex-row.justify-between.bg-image.w-100
-       [:div.flex.flex-column.justify-around.vh-100
-        [:span.ma3.bb.bw2.b--dark-gray [:a.grow.no-underline.avenir.navy.f2.hover-gray.dim {:href (path-for :index)} "Home"]]
-        [:span.ma3.bb.bw2.b--dark-gray [:a.grow.no-underline.avenir.navy.f2.hover-gray.dim {:href (path-for :about)} "About"]]
-        [:span.ma3.bb.bw2.b--dark-gray [:a.grow.no-underline.avenir.navy.f2.hover-gray.dim {:href (path-for :posts)} "Posts"]]]
+       [:div.flex.flex-column.justify-around.vh-100.br.b--navy.bw2.content-center.items-center
+        [:span.ma3.br.bb.br1.b--near-black.bw2.pa4 [:a.w-100.grow.no-underline.avenir.bw1.navy.f2.bg-near-white.black.bg-animate.hover-bg-black.hover-white.items-center.pa3.ba.br1.ma4.b--dark-gray {:href (path-for :index)} "Home"]]
+        [:span.ma3.br.bb.br1.b--near-black.bw2.pa4 [:a.w-100.grow.no-underline.avenir.bw1.navy.f2.bg-near-white.black.bg-animate.hover-bg-black.hover-white.items-center.pa3.ba.br1.ma4.b--dark-gray {:href (path-for :about)} "About"]]
+        [:span.ma3.br.bb.br1.b--near-black.bw2.pa4 [:a.w-100.grow.no-underline.avenir.bw1.navy.f2.bg-near-white.black.bg-animate.hover-bg-black.hover-white.items-center.pa3.ba.br1.ma4.b--dark-gray {:href (path-for :posts)} "Posts!"]]]
        [page]])))
 
 ;; -------------------------

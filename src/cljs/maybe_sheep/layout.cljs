@@ -9,13 +9,13 @@
 
 (defn home-page []
   (fn []
-    [:div.w-75.bl.br.b--black.bw2.flex.flex-row.justify-around
-     [:h1.avenir.navy.f1.tc.bb.b--light-green.bw2.mb2.self-center "Maybe Sheeps"]
-     [:div.flex.flex-column.bg-near-black.br3.bw2.ba.b--moon-gray.w-50.tc.avenir.near-white.f4.pa2.lh-copy.fw2.hover-bg-washed-red.hover-washed-yellow.h-50.self-center.grow 
-      [:div.fw3.bb.bt.bw2.ma2.b--washed-yellow "A blog dedicated to *Functional Programming, and other niche and weird *tech things of my choosing."]
-      [:div.fw3.bb.bw2.ma2.b--washed-yellow "Yes, the name is from the 'Maybe Not' Rich Hickey talk"]
+    [:div.w-75.flex.flex-row.justify-center.flex-column-m.w-80-m
+     [:h1.avenir.dark-gray.f-subheadline.tc.bb.b--near-black.bw2.mb2.self-center.mr4.w-33 "Maybe Sheeps"]
+     [:div.flex.flex-column.bg-near-black.br3.bw2.ba.b--dark-pink.w-50.tc.avenir.near-white.f4.pa2.lh-copy.fw2.hover-bg-dark-gray.hover-light-green.hover-animate.hover-near-black.h-50.self-center.grow.w-75-m
+      [:div.fw3.bb.bt.bw2.ma2.b--washed-blue "A blog dedicated to *Functional Programming, and other niche and weird *tech things of my choosing."]
+      [:div.fw3.bb.bw2.ma2.b--washed-blue "Yes, the name is from the 'Maybe Not' Rich Hickey talk."]
       [:div.f6.fw1.ba.bw2.ma2.b--near-white "* Manufactured on equipment that processes OOP: may contain imperative code & mutable state" 
-       [:div.f6.fw1.ba.bw2.ma2.b--near-white " ** may contain non-tech related things because this is my blog and my code is law here. "] ]]]))
+       [:div.f6.fw1.ba.bw2.ma2.b--near-white " * may contain non-tech related things because this is my blog and my code is law here. "] ]]]))
 
 
 (def content-list (get-in content-store [:content]))
