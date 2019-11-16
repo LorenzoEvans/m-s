@@ -20,3 +20,22 @@
    [:blockquote.f-subheadline.bg-animate.hover-animate.hover-bg-washed-red.hover-purple.pa1.dark-gray "main :: IO ()"]
    [:p.lh-copy.near-black "There was more, but something about that line of code seduced me, and I immediately had to find out what it was. As you've probably guessed by now, it was Haskell, a strictly typed, purely functional language."] 
    [:p.lh-copy.near-black "It was love at first sight. I started learning me a Haskell for great good. I was intoxicated."]]]])
+
+(defn hoon-school-week-1
+  []
+  [:p.avenir.flex.flex-column.pa4.justify-around.content-center.items-center.self-center
+   [:div.flex.flex-column.h-75
+    [:p.f3.fw6.navy.bb.bw2 "I'd been interested in Urbit for a while, and last week, opportunity struck."]
+    [:blockquote.lh-title.f3.fw6.silver "Back in 2017, I'd stumbled upon this strange and peculiar project, based on planets with strange names."]
+    [:p.lh-title.f4.fw6.silver "This is exactly the weird I'm here for, so I snooped around the docs, and....had no idea what was going on."]
+    [:div.lh-solid
+     [:p.lh-copy.near-black "The only recourse for me at the moment was to keep my eye on it, and stow it away in the back of my mind, where many other things sat."]
+     [:p.lh-copy.near-black "Eventually, I came back to it, read tweets, saw blog posts, and began to develop a serious interest in it, this idea of a pre-bitcion semi-decentralized virtual micro-computer/OS, designed from scratch. There just really is no way to express how piqued my curiosity was. I remember coming to it after I had been writing code for several months, and thinking this is either the next Xanadu or the future has arrived, again."]
+     [:p.lh-copy.near-black "Fast forward many moons (so intended), and here I find myself, having completed the Lambda curriculum, starting out on the job search, and looking to expand my knowledge beyond the boundaries of the technologies taught at Lambda. I've settled into the functional world, working with Clojure (this whole blog is done in Clojurescript), and obviously am interested in the bevy of non-centralized solutions, concepts and belief systems that, while not at all new, really exploded into popularity via the hyperbolic rise of corn. When number go up, people pay attention."]
+     [:p.lh-copy.near-black "Now, getting a job in software after a year and a half of (albeit very intense) coding, is very hard, and has been a greed type of time consuming, so I haven't had the time to dedicate to learning Urbit on my own, however, a week or two ago, something floated down my Twitter river and jumped out at me"]
+     [:p.lh-copy.near-black "I decided that I wanted to take a look into this when I had the time, and spent a few weeks or months progressing with JavaScript, conquering old frustrations and meeting new ones, all the while hearing the refrain of Stack Overflow responses in the back of my ear, as if on loop in the dark corners of my mind."]
+     [:blockquote.bg-animate.hover-animate.hover-bg-washed-red.hover-purple.pa1.f2.dark-gray "FP will save you (save you...(save you...))"]
+     [:p.lh-copy.near-black "One night, as I was working on my first todo app with Bootstrap, maybe calculator, I was scrolling through twitter, and spied some of the strangest code I'd ever seen, I didn't know what was going on at all."]
+     [:blockquote.f-subheadline.bg-animate.hover-animate.hover-bg-washed-red.hover-purple.pa1.dark-gray "main :: IO ()"]
+     [:p.lh-copy.near-black "There was more, but something about that line of code seduced me, and I immediately had to find out what it was. As you've probably guessed by now, it was Haskell, a strictly typed, purely functional language."]
+     [:p.lh-copy.near-black "It was love at first sight. I started learning me a Haskell for great good. I was intoxicated."]]]])
