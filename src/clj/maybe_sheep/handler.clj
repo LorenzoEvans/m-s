@@ -40,7 +40,9 @@
       ["" {:get {:handler index-handler}}]
       ["/:post-id" {:get {:handler index-handler
                           :parameters {:path {:post-id int?}}}}]]
-     ["/about" {:get {:handler index-handler}}]])
+     ["/about" {:get {:handler index-handler}}]
+     ["/misc" {:get {:handler index-handler}}]
+     ])
    (reitit-ring/routes
     (reitit-ring/create-resource-handler {:path "/" :root "/public"})
     (reitit-ring/create-default-handler))

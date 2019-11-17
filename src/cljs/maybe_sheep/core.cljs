@@ -1,17 +1,17 @@
 (ns maybe-sheep.core
   (:require
-   [maybe-sheep.layout :refer [home-page
-                               posts-page
-                               post-page
-                               about-page
-                               current-post]]
    [maybe-sheep.routing :refer [path-for router]]
-   [reagent.core :as reagent :refer [atom]]
    [reagent.session :as session]
+   [reagent.core :as reagent]
    [reitit.frontend :as reitit]
    [clerk.core :as clerk]
-   [maybe-sheep.layout :refer [content-list]]
-   [accountant.core :as accountant]))
+   [accountant.core :as accountant]
+   [maybe-sheep.pages.homepage :refer [home-page]]
+   [maybe-sheep.pages.about :refer [about-page]]
+   [maybe-sheep.pages.post :refer [post-page]]
+   [maybe-sheep.pages.posts :refer [posts-page]]
+   [maybe-sheep.pages.misc :refer [misc-page]]
+   ))
 
 ;; -------------------------
 ;; Routes
@@ -29,7 +29,8 @@
     :index #'home-page
     :about #'about-page
     :posts #'posts-page
-    :post #'post-page))
+    :post #'post-page
+    ))
 
 
 ; (def current-post
@@ -49,7 +50,7 @@
         [:span.ma3.br.bb.br1.b--near-black.bw2.pa4.bn-m [:a.w-100.grow.no-underline.avenir.bw1.navy.f2.bg-near-white.black.bg-animate.hover-bg-black.hover-white.items-center.pa3.ba.br1.ma4.b--dark-gray {:href (path-for :index)} "Home"]]
         [:span.ma3.br.bb.br1.b--near-black.bw2.pa4.bn-m [:a.w-100.grow.no-underline.avenir.bw1.navy.f2.bg-near-white.black.bg-animate.hover-bg-black.hover-white.items-center.pa3.ba.br1.ma4.b--dark-gray {:href (path-for :about)} "About"]]
         [:span.ma3.br.bb.br1.b--near-black.bw2.pa4.bn-m [:a.w-100.grow.no-underline.avenir.bw1.navy.f2.bg-near-white.black.bg-animate.hover-bg-black.hover-white.items-center.pa3.ba.br1.ma4.b--dark-gray {:href (path-for :posts)} "Posts!"]]
-        [:span.ma3.br.bb.br1.b--near-black.bw2.pa4.bn-m [:a.w-100.grow.no-underline.avenir.bw1.navy.f2.bg-near-white.black.bg-animate.hover-bg-black.hover-white.items-center.pa3.ba.br1.ma4.b--dark-gray {:href (path-for :posts)} "Misc!"]]
+        [:span.ma3.br.bb.br1.b--near-black.bw2.pa4.bn-m [:a.w-100.grow.no-underline.avenir.bw1.navy.f2.bg-near-white.black.bg-animate.hover-bg-black.hover-white.items-center.pa3.ba.br1.ma4.b--dark-gray {:href (path-for :misc)} "Misc!"]]
         ]
        [page]])))
 

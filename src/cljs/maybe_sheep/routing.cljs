@@ -8,7 +8,9 @@
     ["/posts"
      ["" :posts]
      ["/:post-id" :post]]
-    ["/about" :about]]))
+    ["/about" :about]
+    ["/misc" :misc]
+    ]))
 
 (defn path-for [route & [params]]
   (if params
