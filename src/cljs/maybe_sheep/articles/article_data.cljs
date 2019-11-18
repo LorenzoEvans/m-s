@@ -22,7 +22,9 @@
    [:p.lh-copy.near-black "There was more, but something about that line of code seduced me, and I immediately had to find out what it was. As you've probably guessed by now, it was Haskell, a strictly typed, purely functional language."] 
    [:p.lh-copy.near-black "It was love at first sight. I started learning me a Haskell for great good. I was intoxicated. I could not believe how useful list comprehensions were, they just seemed like such an ingenius way to work on data, I enjoyed guards as conditional clauses, but there was something else that really seaked my resolve to become a functional programmer."]
    [:blockquote.f3.bg-animate.hover-animate.hover-bg-washed-green.hover-purple.pa1.dark-gray.grow.animate.fw5.grow.bl.br.bw2.b--near-black.w-75.tc.tracked-mega "T Y P E S I G N A T U R E S"]
-   [:blockquote.f3.bg-animate.hover-animate.hover-bg-washed-green.hover-purple.pa1.dark-gray.grow.animate.fw5.grow.bl.br.bw2.b--near-black.w-75.tc.tracked-mega "inc :: Num a => a -> a"]
+   [:blockquote.f3.bg-animate.hover-animate.hover-bg-washed-green.hover-purple.pa1.dark-gray.grow.animate.fw5.grow.bl.br.bw2.b--near-black.w-75.tc "inc :: Num a => a -> a"
+    [:hr.w-75.bb.bw2.b--navy]
+    [:div.fw1 "(inc is of type Num a, meaning it can accept any value so long as it is of the Num typeclass, it expects one of those values, and will return one. )"]]
    [:p.lh-copy.near-black "Wha- what do you mean, 'go back'?"] 
    [:p.lh-copy.near-black " The former will no longer suffice. "]
    [:p.lh-copy.near-black "The number of hours lost that would have been saved if I had've been able to express to my compiler the nature, the type I expected a function to be working with, and what order, at every stage of it's execution are too great, to many. I was staying here. I would be a Haskeller. I felt at home."]
