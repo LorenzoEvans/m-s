@@ -30,6 +30,7 @@
     :about #'about-page
     :posts #'posts-page
     :post #'post-page
+    :misc #'misc-page
     ))
 
 

@@ -3,7 +3,8 @@
 (defn labs-article-data []
   [:div "hi"])
 
-
+(defn in-progress []
+  [:div.f-subheadline.avenir.fw5.tc.hover-bg-light-gray.hover-dark-pink.pa2.grow.ba.b--purple.bw2.br2 "Article :: In progress..."])
 (defn how-fp-data []
 [:p.avenir.flex.flex-column.pa4.justify-around.content-center.items-center.self-center
  [:section.flex.flex-column.h-75

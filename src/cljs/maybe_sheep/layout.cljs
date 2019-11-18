@@ -6,6 +6,7 @@
 (path-for :about)
 (path-for :posts)
 (path-for :post)
+(path-for :misc)
 
 (defn home-page []
   (fn []
