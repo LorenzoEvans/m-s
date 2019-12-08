@@ -18,5 +18,9 @@
              {:keys [title url prev]} (second item)]
          ^{:key kw}
          [:div.w-100.flex.flex-row.justify-center.ma2
-          [:a.avenir.link.dim.navy.truncate {:href (path-for :post {:post-id url})
-                                             :on-click #(swap! current-post assoc :current-post kw)} title]]))]))
+          [:ul 
+           (map
+            (fn [item-id]
+             [:li 
+               [:a.avenir.link.dim.navy.truncate {:href (path-for :item {:item-id item-id})}
+                                            title]]) (range (count content-list)))]]))]))

@@ -1,18 +1,16 @@
 (ns maybe-sheep.routing
-  (:require [reitit.frontend :as r]
+  (:require [reitit.frontend :as reitit]
             [maybe-sheep.articles.article-content :refer [content-store]]))
 
 (def router
-  (r/router
-   [["/" :index]
-    ["/posts"
-     ["" :posts]
-     ["/:post-id" :post]]
-    ["/about" :about]
-    ["/misc" :misc]
-    ]))
+  (reitit/router
+    [["/" :index]
+    ["/items"
+      ["" :items]
+      ["/:item-id" :item]]
+    ["/about" :about]]))
 
 (defn path-for [route & [params]]
   (if params
-    (:path (r/match-by-name router route params))
-    (:path (r/match-by-name router route))))
+    (:path (reitit/match-by-name router route params))
+    (:path (reitit/match-by-name router route))))

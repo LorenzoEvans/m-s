@@ -21,5 +21,5 @@
         [:h1.avenir title]
         [:div.avenir.near-black prev]
         [:div.flex.justify-center.article-height full-article]
-        [:p [:a.avenir.link.dim.navy {:href (path-for :posts)} "Back to the list of items"]]])]))
+        [:p [:a.avenir.link.dim.navy {:href (path-for :items)} "Back to the list of items"]]])]))
 

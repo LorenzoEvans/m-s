@@ -4,8 +4,8 @@
             [maybe-sheep.articles.article-content :refer [content-store]]))
 
 (path-for :about)
-(path-for :posts)
-(path-for :post)
+(path-for :items)
+(path-for :item)
 (path-for :misc)
 
 (defn home-page []
