@@ -13,4 +13,4 @@
 (defn path-for [route & [params]]
   (if params
     (:path (reitit/match-by-name router route params))
-    (:path (reitit/match-by-name router route))))
+    (:path (reitit/match-by-name router route params))))
