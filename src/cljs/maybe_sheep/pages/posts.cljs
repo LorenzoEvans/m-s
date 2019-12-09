@@ -13,12 +13,10 @@
   (fn []
     [:span.w-75.flex.flex-column.justify-evenly.overflow-scroll.content-center.items-center.bw2.b--black
      [:h1.w5.tc.avenir "Maybe Posts"]
-     (for [item content-list
-           val (vec (range (count content-list)))]
+     (for [item content-list]
        (let [kw (first item)
              {:keys [title url prev]} (second item)]
+         ^{:key kw}
          [:div.w-100.flex.flex-row.justify-center.ma2
-          [:ul 
-           ^{:key kw} 
-           [:li
-            [:a.avenir.link.dim.navy.truncate {:href (path-for :item {:item-id val})} title]]]]))]))
+          [:a.avenir.link.dim.navy.truncate {:href (path-for :post {:post-id url})
+                                             :on-click #(swap! current-post assoc :current-post kw)} title]]))]))

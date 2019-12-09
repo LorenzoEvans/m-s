@@ -10,8 +10,8 @@
    [maybe-sheep.pages.about :refer [about-page]]
    [maybe-sheep.pages.post :refer [post-page]]
    [maybe-sheep.pages.posts :refer [posts-page]]
-   [maybe-sheep.pages.misc :refer [misc-page]]))
-   
+   [maybe-sheep.pages.misc :refer [misc-page]]
+   ))
 
 ;; -------------------------
 ;; Routes
@@ -28,10 +28,10 @@
   (case route
     :index #'home-page
     :about #'about-page
-    :items #'posts-page
-    :item #'post-page
-    :misc #'misc-page))
-    
+    :posts #'posts-page
+    :post #'post-page
+    :misc #'misc-page
+    ))
 
 
 ; (def current-post
@@ -50,9 +50,9 @@
        [:div.flex.flex-column.justify-around.vh-100.bw2.content-center.items-center.w-40-m
         [:span.ma3.br.bb.br1.b--near-black.bw2.pa4.bn-m [:a.w-100.grow.no-underline.avenir.bw1.navy.f2.bg-near-white.black.bg-animate.hover-bg-black.hover-white.items-center.pa3.ba.br1.ma4.b--dark-gray {:href (path-for :index)} "Home"]]
         [:span.ma3.br.bb.br1.b--near-black.bw2.pa4.bn-m [:a.w-100.grow.no-underline.avenir.bw1.navy.f2.bg-near-white.black.bg-animate.hover-bg-black.hover-white.items-center.pa3.ba.br1.ma4.b--dark-gray {:href (path-for :about)} "About"]]
-        [:span.ma3.br.bb.br1.b--near-black.bw2.pa4.bn-m [:a.w-100.grow.no-underline.avenir.bw1.navy.f2.bg-near-white.black.bg-animate.hover-bg-black.hover-white.items-center.pa3.ba.br1.ma4.b--dark-gray {:href (path-for :items)} "Posts!"]]
-        [:span.ma3.br.bb.br1.b--near-black.bw2.pa4.bn-m [:a.w-100.grow.no-underline.avenir.bw1.navy.f2.bg-near-white.black.bg-animate.hover-bg-black.hover-white.items-center.pa3.ba.br1.ma4.b--dark-gray {:href (path-for :misc)} "Misc!"]]]
-        
+        [:span.ma3.br.bb.br1.b--near-black.bw2.pa4.bn-m [:a.w-100.grow.no-underline.avenir.bw1.navy.f2.bg-near-white.black.bg-animate.hover-bg-black.hover-white.items-center.pa3.ba.br1.ma4.b--dark-gray {:href (path-for :posts)} "Posts!"]]
+        [:span.ma3.br.bb.br1.b--near-black.bw2.pa4.bn-m [:a.w-100.grow.no-underline.avenir.bw1.navy.f2.bg-near-white.black.bg-animate.hover-bg-black.hover-white.items-center.pa3.ba.br1.ma4.b--dark-gray {:href (path-for :misc)} "Misc!"]]
+        ]
        [page]])))
 
 ;; -------------------------
@@ -72,8 +72,8 @@
         (reagent/after-render clerk/after-render!)
         (session/put! :route {:current-page (page-for current-page)
                               :route-params route-params})
-        (clerk/navigate-page! path)))
-        
+        (clerk/navigate-page! path)
+        ))
     :path-exists?
     (fn [path]
       (boolean (reitit/match-by-path router path)))})
