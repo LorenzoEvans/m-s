@@ -2,7 +2,7 @@
   (:require [reitit.frontend :as r]
             [bidi.bidi :as bidi]
             [re-frame.core :refer [dispatch]]
-            [kibu/pushy :as pushy]
+            [pushy.core :as pushy]
             [maybe-sheep.articles.article-content :refer [content-store]]))
 
 
