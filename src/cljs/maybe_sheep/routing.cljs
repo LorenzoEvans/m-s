@@ -17,7 +17,7 @@
   (let [dispatch #(dispatch [:set-active-page {:page (:handler %)
                                                :slug (get-in % [:route-params :slug])}])
         match #(bidi/match-route routes %)]
-        (pushy/pushy dispatch match)))
+       (pushy/pushy dispatch match)))
 
 (defn- parse-url
 ; bidi/match-route converts urls to data structures and check if the route exists in our route.

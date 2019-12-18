@@ -7,6 +7,7 @@
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [ring-server "0.5.0"]
                  [reagent "0.8.1"]
+                 [re-frame "0.11.0-rc3"]
                  [reagent-utils "0.3.3"]
                  [ring "1.7.1"]
                  [bidi "2.1.6"]

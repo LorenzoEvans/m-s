@@ -9,7 +9,7 @@
 
 @current-post
 
-(defn posts-page []
+(defn posts-page [posts & loading-posts]
   (fn []
     [:span.w-75.flex.flex-column.justify-evenly.overflow-scroll.content-center.items-center.bw2.b--black
      [:h1.w5.tc.avenir "Maybe Posts"]
