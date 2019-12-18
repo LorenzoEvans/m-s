@@ -20,4 +20,7 @@
     (fn [db _]
         (:articles-count db)))
              
-(reg-sub :)
+(reg-sub :active-article
+    (fn [db _]
+        (let [:active-article (:active-article db)]
+            (get-in db [:articles :active-article]))))
