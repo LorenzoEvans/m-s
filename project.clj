@@ -9,6 +9,8 @@
                  [reagent "0.8.1"]
                  [reagent-utils "0.3.3"]
                  [ring "1.7.1"]
+                 [bidi "2.1.6"]
+                 [kibu/pushy "0.3.8"]
                  [ring/ring-defaults "0.3.2"]
                  [hiccup "1.0.5"]
                  [yogthos/config "1.1.3"]
