@@ -10,6 +10,7 @@
                  [reagent-utils "0.3.3"]
                  [ring "1.7.1"]
                  [bidi "2.1.6"]
+                 [day8.re-frame/http-fx "v0.2.0"]
                  [kibu/pushy "0.3.8"]
                  [ring/ring-defaults "0.3.2"]
                  [hiccup "1.0.5"]
