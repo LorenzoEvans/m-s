@@ -3,6 +3,11 @@
               [re-frame.core :refer [reg-event-db reg-event-fx reg-fx inject-cofx trim-v after path debug]]
               [maybe-sheep.routing :as router]))
 
+
+(reg-event-fx :initialize-db
+    (fn [_ _]
+        content-store))
+
 (reg-fx :set-url
     (fn [{:keys [url]}]
         (router/set-token! url)))
@@ -33,3 +38,10 @@
                  (assoc-in [:loading :articles] true)
                  (assoc-in [:filter :offset] (:offset params)))}))
         
+(reg-event-db :get-articles-success
+    (fn [db [_ {articles :articles, articles-count :articlesCount}]]
+        (-> db
+            (assoc-in [:loading :articles] false)
+            (assoc :articles-count articles-count
+                   :articles (index-by :slug articles)))))
+            

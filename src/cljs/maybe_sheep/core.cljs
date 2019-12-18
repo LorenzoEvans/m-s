@@ -2,6 +2,7 @@
   (:require
    [maybe-sheep.routing :refer [path-for router]]
    [reagent.session :as session]
+   [re-frame.core :refer [dispatch dispatch-sync clear-subscription-cache!]]
    [reagent.core :as reagent]
    [reitit.frontend :as reitit]
    [clerk.core :as clerk]
@@ -21,6 +22,12 @@
 ;; -------------------------
 ;; Page components
 
+(defn ^:export init []
+  (routing/start!)
+  (dispatch-sync [:initialize-db]))
+
+(reagent/render [maybe-sheep.layout/application]
+  (.getElementById js/document "app"))
 
 ;; -------------------------
 ;; Translate routes -> page components
