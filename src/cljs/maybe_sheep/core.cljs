@@ -34,12 +34,6 @@
     ))
 
 
-; (def current-post
-;   (atom {:current-post nil}))
-
-
-; @current-post
-
 ;; -------------------------
 ;; Page mounting component
 
@@ -47,6 +41,7 @@
   (fn []
     (let [page (:current-page (session/get :route))]
       [:div.moon-gray.vh-100.flex.flex-row.justify-between
+      (js/console.log page)
        [:div.flex.flex-column.justify-around.vh-100.bw2.content-center.items-center.w-40-m
         [:span.ma3.br.bb.br1.b--near-black.bw2.pa4.bn-m [:a.w-100.grow.no-underline.avenir.bw1.navy.f2.bg-near-white.black.bg-animate.hover-bg-black.hover-white.items-center.pa3.ba.br1.ma4.b--dark-gray {:href (path-for :index)} "Home"]]
         [:span.ma3.br.bb.br1.b--near-black.bw2.pa4.bn-m [:a.w-100.grow.no-underline.avenir.bw1.navy.f2.bg-near-white.black.bg-animate.hover-bg-black.hover-white.items-center.pa3.ba.br1.ma4.b--dark-gray {:href (path-for :about)} "About"]]
@@ -70,6 +65,7 @@
             current-page (:name (:data  match))
             route-params (:path-params match)]
         (reagent/after-render clerk/after-render!)
+        (js/console.log match)
         (session/put! :route {:current-page (page-for current-page)
                               :route-params route-params})
         (clerk/navigate-page! path)
