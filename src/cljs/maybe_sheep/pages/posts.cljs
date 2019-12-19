@@ -5,7 +5,7 @@
 
 (def content-list (get-in content-store [:content]))
 
-(def current-post (atom {:current-post nil}))
+(def current-post (atom {:current-post :how-fp}))
 
 @current-post
 

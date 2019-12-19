@@ -38,8 +38,7 @@
     [["/" {:get {:handler index-handler}}]
      ["/posts"
       ["" {:get {:handler index-handler}}]
-      ["/:post-id" {:get {:handler index-handler
-                          :parameters {:path {:post-id int?}}}}]]
+      ["/:post-id" {:get {:handler index-handler}}]]
      ["/about" {:get {:handler index-handler}}]
      ["/misc" {:get {:handler index-handler}}]
      ])
