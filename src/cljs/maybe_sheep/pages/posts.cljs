@@ -4,8 +4,10 @@
    [maybe-sheep.routing :refer [path-for]]))
 
 (def content-list (get-in content-store [:content]))
+; becomes nil on reload. that's the bug
+; we can't hardcore the value in because that'll ruin reload, so the question is how do we...do this dynamically?
 
-(def current-post (atom {:current-post :how-fp}))
+(def current-post (atom {:current-post :how-fp})) 
 
 @current-post
 

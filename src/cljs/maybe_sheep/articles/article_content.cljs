@@ -7,11 +7,11 @@
   {:content (array-map
              :how-fp  {:title "How I Ended Up A Functional Programmer"
                        :prev "One night, a little Haskell, and here we are."
-                       :url "/how-fp"
+                       :url "how-fp"
                        :panel-name :how-fp
                        :full-article [how-fp-data]}
              :hoon-week-1 {:title "Hoon School: Week One" :prev "What the f#&% is thi-...oh my god it's amazing."
-                           :url "/hoon-school-week-one"
+                           :url "hoon-school-week-one"
                            :panel-name :hoon-week-1
                            :full-article [hoon-school-week-1]}
             ;  :lambda-labs-gql-1 {:title "Lambda Labs & GraphQL, Part I"
