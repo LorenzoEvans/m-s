@@ -17,7 +17,7 @@
    [:meta {:charset "utf-8"}]
    [:meta {:name "viewport"
            :content "width=device-width, initial-scale=1"}
-    [:link {:href "https://fonts.googleapis.com/css?family=Major+Mono+Display|Monoton|Poiret+One&display=swap"}]
+    [:link {:href "https://fonts.googleapis.com/css?family=Major+Mono+Display|Monoton|Poiret+One&display=swap" :rel "stylesheet"}]
     [:link {:href "https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" :rel "stylesheet"}]]
    (include-css "/css/site.css" "https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css")])
 
