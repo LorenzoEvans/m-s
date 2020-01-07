@@ -1,6 +1,6 @@
   
-(ns app-sheeps.pages.homepage
-  (:require [maybe-sheeps.subs]))
+(ns maybe-sheep.pages.homepage
+  (:require [maybe-sheep.subs]))
 
 (defn new-string [x]
   (clojure.string/replace x "." " "))

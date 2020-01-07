@@ -1,5 +1,5 @@
-(ns maybe-sheeps.articles.article-data
-  (:require [maybe-sheeps.pages.homepage :refer [link-styling-x]]))
+(ns maybe-sheep.articles.article-data
+  (:require [maybe-sheep.pages.homepage :refer [link-styling-x]]))
 
 (defn labs-article-data []
   [:div "hi"])

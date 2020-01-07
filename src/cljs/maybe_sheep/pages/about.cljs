@@ -1,5 +1,5 @@
 
-(ns maybe-sheeps.pages.about)
+(ns maybe-sheep.pages.about)
 
 (defn about-page []
   (fn [] [:span.w-100.bw2.b--near-black.overflow-scroll.flex.flex-column.justify-center.vh-100.bg-image-4

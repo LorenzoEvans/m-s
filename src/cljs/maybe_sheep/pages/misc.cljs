@@ -1,6 +1,6 @@
-(ns maybe-sheeps.pages.misc
-  (:require [maybe-sheeps.pages.misc-content :refer [misc-items]]
-            [maybe-sheeps.pages.homepage :refer [link-styling-x]]))
+(ns maybe-sheep.pages.misc
+  (:require [maybe-sheep.pages.misc-content :refer [misc-items]]
+            [maybe-sheep.pages.homepage :refer [link-styling-x]]))
 
 
 ; we need an array of colors

@@ -1,4 +1,4 @@
-(ns app-sheeps.routing
+(ns maybe-sheep.routing
   (:require-macros [secretary.core :refer [defroute]])
   (:import [goog History]
            [goog.history EventType])
@@ -6,7 +6,7 @@
    [secretary.core :as secretary]
    [goog.events :as gevents]
    [re-frame.core :as re-frame]
-   [app-sheeps.events :as events]
+   [maybe-sheep.events :as events]
    ))
 
 (defn hook-browser-navigation! []

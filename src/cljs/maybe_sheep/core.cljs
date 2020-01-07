@@ -1,13 +1,13 @@
-(ns maybe-sheeps.core
+(ns maybe-sheep.core
   (:require
    [reagent.core :as reagent]
    [re-frame.core :as re-frame]
-   [maybe-sheeps.events :as events]
-   [maybe-sheeps.routes :as routes]
-   [maybe-sheeps.views :as views]
-   [maybe-sheeps.articles.article-content]
-   [maybe-sheeps.articles.article-data]
-   [maybe-sheeps.config :as config]))
+   [maybe-sheep.events :as events]
+   [maybe-sheep.routing :as routes]
+   [maybe-sheep.views :as views]
+   [maybe-sheep.articles.article-content]
+   [maybe-sheep.articles.article-data]
+   [maybe-sheep.config :as config]))
 
 
 (defn dev-setup []

@@ -1,7 +1,7 @@
-(ns maybe-sheeps.pages.posts
+(ns maybe-sheep.pages.posts
   (:require 
-   [maybe-sheeps.articles.article-content :refer [content-store]]
-   [maybe-sheeps.pages.homepage :refer [link-styling-x]]))
+   [maybe-sheep.articles.article-content :refer [content-store]]
+   [maybe-sheep.pages.homepage :refer [link-styling-x]]))
 
 (def content-list (get-in content-store [:content]))
 

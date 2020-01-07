@@ -1,12 +1,12 @@
-(ns app-sheeps.views
+(ns maybe-sheep.views
   (:require
    [re-frame.core :as re-frame]
-   [app-sheeps.subs :as subs]
-   [app-sheeps.pages.homepage :refer [home-page]]
-   [app-sheeps.pages.about :refer [about-page]]
-   [app-sheeps.pages.posts :refer [posts-page]]
-   [app-sheeps.pages.misc :refer [misc-page]]
-   [app-sheeps.articles.article-data :refer [how-fp hoon-school-week-1]]
+   [maybe-sheep.subs :as subs]
+   [maybe-sheep.pages.homepage :refer [home-page]]
+   [maybe-sheep.pages.about :refer [about-page]]
+   [maybe-sheep.pages.posts :refer [posts-page]]
+   [maybe-sheep.pages.misc :refer [misc-page]]
+   [maybe-sheep.articles.article-data :refer [how-fp hoon-school-week-1]]
    ))
 
 

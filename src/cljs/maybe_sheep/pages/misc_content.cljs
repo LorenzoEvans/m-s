@@ -1,4 +1,4 @@
-(ns maybe-sheeps.pages.misc-content)
+(ns maybe-sheep.pages.misc-content)
 
 (def misc-items [{:title "Left"
                   :link "www.google" 
