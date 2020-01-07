@@ -9,7 +9,7 @@ html, body {
 }
 
 .bg-image {
-	background: url('./assets/arch2.jpeg');
+	background: url('../assets/arch2.jpeg');
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
@@ -19,28 +19,28 @@ html, body {
     /* z-index: 3; */
 }
 .bg-image-2 {
-	background: url('./assets/palms.jpeg');
+	background: url('../assets/palms.jpeg');
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
     /* z-index: 3; */
 }
 .bg-image-3 {
-	background: url('./assets/bluepink.jpeg');
+	background: url('../assets/bluepink.jpeg');
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
     /* z-index: 3; */
 }
 .bg-image-4 {
-	background: url('./assets/doors.jpeg');
+	background: url('../assets/doors.jpeg');
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
     /* z-index: 3; */
 }
 .bg-image-5 {
-	background: url('./assets/architecture1.jpeg');
+	background: url('../assets/architecture1.jpeg');
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
@@ -48,7 +48,7 @@ html, body {
 }
 
 #bg-image-6 {
-	background: url('./assets/plant.jpeg');
+	background: url('../assets/plant.jpeg');
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
