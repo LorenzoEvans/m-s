@@ -1,18 +1,48 @@
-(ns maybe-sheep.routing
-  (:require [reitit.frontend :as r]
-            [maybe-sheep.articles.article-content :refer [content-store]]))
+(ns app-sheeps.routing
+  (:require-macros [secretary.core :refer [defroute]])
+  (:import [goog History]
+           [goog.history EventType])
+  (:require
+   [secretary.core :as secretary]
+   [goog.events :as gevents]
+   [re-frame.core :as re-frame]
+   [app-sheeps.events :as events]
+   ))
 
-(def router
-  (r/router
-   [["/" :index]
-    ["/posts"
-     ["" :posts]
-     ["/:post-id" :post]]
-    ["/about" :about]
-    ["/misc" :misc]
-    ]))
+(defn hook-browser-navigation! []
+  (doto (History.)
+    (gevents/listen
+     EventType/NAVIGATE
+     (fn [event]
+       (secretary/dispatch! (.-token event))))
+    (.setEnabled true)))
 
-(defn path-for [route & [params]]
-  (if params
-    (:path (r/match-by-name router route params))
-    (:path (r/match-by-name router route))))
+(defn app-routes []
+  (secretary/set-config! :prefix "#")
+  ;; --------------------
+  ;; define routes here
+  (defroute "/" []
+    (re-frame/dispatch [::events/set-active-panel :home-panel])
+    )
+
+  (defroute "/about" []
+    (re-frame/dispatch [::events/set-active-panel :about-panel]))
+
+  (defroute "/posts" []
+    (re-frame/dispatch [::events/set-active-panel :posts-panel]))
+  (defroute "/misc" []
+    (re-frame/dispatch [::events/set-active-panel :misc-panel]))
+  (defroute "/how-fp" []
+    (re-frame/dispatch [::events/set-active-panel :how-fp-panel]))
+  (defroute "/hoon-school-week-1" []
+    (re-frame/dispatch [::events/set-active-panel :hoon-school-week-1-panel]))
+  ; (defroute "/posts" []
+  ;   (re-frame/dispatch [::events/set-active-panel :posts-panel]))
+  ; (defroute "/posts" []
+  ;   (re-frame/dispatch [::events/set-active-panel :posts-panel]))
+  ; (defroute "/posts" []
+  ;   (re-frame/dispatch [::events/set-active-panel :posts-panel]))
+
+
+  ;; --------------------
+  (hook-browser-navigation!))

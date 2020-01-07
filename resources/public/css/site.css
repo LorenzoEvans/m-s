@@ -1,34 +1,132 @@
+/* @tailwind base;
 
+@tailwind components;
 
-h1, h2, h3 {
-  color: #000;
+@tailwind utilities; */
+html, body {
+  height: 100vh;
+  min-height: 100vh;
 }
-h1 {
-  font-size: 2.5em
-}
-
-h2 {
-  font-size: 2em
-}
-
-h3 {
-  font-size: 1.5em
-}
-
-a {
-  text-decoration: none;
-  color: #09f;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
 
 .bg-image {
-  background-image: url();
+	background: url('./assets/arch2.jpeg');
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  height: auto;
+  top: 0;
+  left: 0 ;
+    /* z-index: 3; */
+}
+.bg-image-2 {
+	background: url('./assets/palms.jpeg');
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    /* z-index: 3; */
+}
+.bg-image-3 {
+	background: url('./assets/bluepink.jpeg');
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    /* z-index: 3; */
+}
+.bg-image-4 {
+	background: url('./assets/doors.jpeg');
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    /* z-index: 3; */
+}
+.bg-image-5 {
+	background: url('./assets/architecture1.jpeg');
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    /* z-index: 3; */
 }
 
-/* .article-height {
-  height: 300px; 
+#bg-image-6 {
+	background: url('./assets/plant.jpeg');
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    /* z-index: 3; */
+}
+
+
+/* .bg-color {
+    background-color: blueviolet !important;
 } */
+
+a.mono-gf {
+  font-family: 'Major Mono Display';
+}
+
+span.m-sub {
+  font-family: 'Montserrat Subrayada';
+  transform: scale3d(200deg);
+}
+
+#p-gram {
+  /* margin: 0 auto; */
+  /* padding-top: 29.5px; */
+  margin-left: 10%;
+  width: 600px;
+  height: 400px;
+  border: 3px solid gainsboro;
+  box-shadow: 2px 2px 10px;
+  justify-content: center;
+  /* transform: skew(20deg); */
+  /* transform: rotate3d(1, 0, 1, 50deg); */
+  /* background: url('./assets/doors.jpeg'); */
+  
+}
+
+span#n-skew {
+  transform: skew(-10deg);
+  /* border: 1px solid white; */
+  transform: rotate3d(-1, 1, -1, -50deg);
+}
+
+/* .body {
+  height: ;
+} */
+
+.opac-text {
+  opacity: 0.2 !important;
+}
+
+.constrain-height {
+  height: auto;
+  width:  auto;
+}
+
+.c1 {
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+.c2 {
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+.c3 {
+  background-image: linear-gradient(to top, #dcd3df 0%, #d9ded8 100%);
+}
+.c4 {
+  background:  #84FFFF ;
+}
+.c5 {
+  background:  #90A4AE ;
+}
+.c6 {
+  background: #757575 ;
+}
+.c7 {
+  background:  #A5D6A7 ;
+}
+.c1 {
+  background:  ;
+}
+.c1 {
+  background:  ;
+}
