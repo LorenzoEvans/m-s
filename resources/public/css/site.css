@@ -65,6 +65,10 @@ a.mono-gf {
   font-family: 'Major Mono Display';
 }
 
+section.sub-m {
+  font-family: 'Montserrat Subrayada';
+}
+
 span.m-sub {
   font-family: 'Montserrat Subrayada';
   transform: scale3d(200deg);
