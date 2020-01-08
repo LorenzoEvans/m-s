@@ -45,7 +45,7 @@
     [about-anchor]
     [misc-anchor]
     [arena-anchor]]
-   [:div#p-gram.w-100.bg-image-6.tracked-mega.h3-m.bg-near-black.flex.flex-column.content-center.mt4
-    [:span#n-skew.m-sub.f-subheadline.tracked-mega.f2-m.fw1.self-center.near-white.bb.bw1.b--moon-gray.light-purple "s[Y]nths"] 
-    [:span#n-skew.m-sub.f-subheadline.tracked-mega.f2-m.fw1.self-center.near-white.bb.bw1.b--moon-gray.light-purple "f0r"] 
-    [:span#n-skew.m-sub.f-subheadline.tracked-mega.f2-m.fw1.b.self-center.near-white.bb.bw1.b--light-pink.light-green "comp[I]lers"]]]))
+   [:div#p-gram.w-100.bg-image-6.tracked-mega.h3-m.bg-near-white.flex.flex-column.content-center.mt4
+    [:span#n-skew.m-sub.f1.tracked-mega.f2-m.fw1.self-center.near-white.bb.bw1.b--moon-gray.light-blue "s[Y]nths"] 
+    [:span#n-skew.m-sub.f1.tracked-mega.f2-m.fw1.self-center.near-white.bb.bw1.b--near-black.hot-pink "f0r"] 
+    [:span#n-skew.m-sub.f1.tracked-mega.f2-m.fw1.b.self-center.near-white.bb.bw1.b--light-pink.navy "comp[I]lers"]]]))

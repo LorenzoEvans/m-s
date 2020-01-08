@@ -48,11 +48,12 @@ html, body {
 }
 
 #bg-image-6 {
-	background: url('../assets/plant.jpeg');
-	background-position: center; /* Center the image */
-	background-repeat: no-repeat; /* Do not repeat the image */
+  background: url('../assets/plant.jpeg');
+  position: fixed;
+	/* background-position: center; 
+	background-repeat: no-repeat; 
     background-size: cover;
-    /* z-index: 3; */
+    z-index: 3; */
 }
 
 
