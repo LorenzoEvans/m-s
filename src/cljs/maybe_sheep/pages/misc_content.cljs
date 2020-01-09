@@ -19,4 +19,8 @@
                  {:title "Max Cooper"
                   :link "www.google" 
                   :tags #{"music" "art" "algo-art" "digi-art"}
-                  :bg "bg-light-gray"}])
+                  :bg "c2"}
+                 {:title "DAT Protocol"
+                  :link "www.google" 
+                  :tags #{"dec/dist"}
+                  :bg "bg-light-gray"}]) 
