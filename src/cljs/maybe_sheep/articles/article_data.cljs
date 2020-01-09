@@ -40,7 +40,7 @@
 
    [:div.hover-light-blue "someFunc :: IO ()"]
    [:div.hover-light-green "someFunc = putStrLn \"someFunc\""]]
-   [:p.lh-copy.near-black "There was more, but these few lines of code were enough to seduce me, and I immediately had to find out what it was. As you've probably guessed by now, it was Haskell, which happens to be a strictly typed, purely functional, and extremely language. It was love at first sight. I started learning me a Haskell for great good. I was intoxicated. I could not believe how useful list comprehensions were, guards as conditional statements, or function composition was, but there was something else that really seaked my resolve to become a functional programmer:"]
+   [:p.lh-copy.near-black "There was more, but these few lines of code were enough to seduce me, and I immediately had to find out what it was. As you've probably guessed by now, it was Haskell, which happens to be a strictly typed, purely functional, and extremely unique language. It was love at first sight. I started learning me a Haskell for great good. I was intoxicated. I could not believe how useful list comprehensions were, guards as conditional statements, or function composition was, but there was something else that really seaked my resolve to become a functional programmer:"]
    [:blockquote.f3.bg-animate.hover-animate.hover-bg-washed-green.hover-purple.pa1.dark-gray.grow.animate.fw5.grow.bl.br.bw2.b--near-black.w-100.tc.tracked-mega "T Y P E S I G N A T U R E S"]
    [:blockquote.f3.bg-animate.hover-animate.hover-bg-washed-green.hover-purple.pa1.dark-gray.grow.animate.fw5.grow.bl.br.bw2.b--near-black.w-100.tc "inc :: Num a => a -> a"
     [:hr.w-50.bb.bw2.b--navy]
