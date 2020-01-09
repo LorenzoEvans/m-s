@@ -1,26 +1,30 @@
 (ns maybe-sheep.pages.misc-content)
 
 (def misc-items [{:title "Left"
-                  :link "www.google" 
+                  :link "https://hundredrabbits.itch.io/left" 
                   :tags #{"application" "minimalist"}
                   :bg "c1"}
                  {:title "Urbit"
-                  :link "www.google" 
-                  :tags #{"application" "minimalist" "dec/dist"}
+                  :link "https://urbit.org" 
+                  :tags #{"application" "dec/dist"}
                   :bg "c2"}
                  {:title "Are.na"
-                  :link "www.google" 
+                  :link "https://www.are.na" 
                   :tags #{"site" "minimalist"}
                   :bg "c3"}
                  {:title "Lietal"
-                  :link "www.google" 
+                  :link "https://wiki.xxiivv.com/#lietal" 
                   :tags #{"language"}
                   :bg "bg-washed-blue"}
                  {:title "Max Cooper"
-                  :link "www.google" 
-                  :tags #{"music" "art" "algo-art" "digi-art"}
+                  :link "https://maxcooper.net" 
+                  :tags #{"music"}
                   :bg "c2"}
                  {:title "DAT Protocol"
-                  :link "www.google" 
+                  :link "https://docs.datproject.org" 
                   :tags #{"dec/dist"}
+                  :bg "bg-light-gray"}
+                 {:title "Structure And Interpretation, MIT, 1986"
+                  :tags #{"lisp"}
+                  :link "https://www.youtube.com/playlist?list=PLE18841CABEA24090"
                   :bg "bg-light-gray"}]) 
