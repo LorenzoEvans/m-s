@@ -6,7 +6,7 @@
    [maybe-sheep.pages.about :refer [about-page]]
    [maybe-sheep.pages.posts :refer [posts-page]]
    [maybe-sheep.pages.misc :refer [misc-page]]
-   [maybe-sheep.articles.article-data :refer [how-fp hoon-school-week-1]]
+   [maybe-sheep.articles.article-data :refer [how-fp hoon-school-week-1 how-code]]
    ))
 
 
@@ -28,6 +28,7 @@
     :home-panel [home-page]
     :about-panel [about-page]
     :posts-panel [posts-page]
+    :how-code-panel [how-code]
     :how-fp-panel [how-fp]
     :misc-panel [misc-page]
     :hoon-school-week-1-panel [hoon-school-week-1]

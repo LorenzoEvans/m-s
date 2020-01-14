@@ -4,7 +4,7 @@
 (def content-store
   {:content (array-map
              :how-code {:title "How I Ended Up Writing Code: The Prequel" :prev "spoiler alert: it involves bitcoin"
-                      :url "#/how-code-a-prequel"
+                      :url "#/how-code"
                       :panel-name :how-code
                       :full-article [in-progress]}
              :how-fp  {:title "How I Ended Up A Functional Programmer"

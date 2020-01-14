@@ -32,6 +32,8 @@
     (re-frame/dispatch [::events/set-active-panel :posts-panel]))
   (defroute "/misc" []
     (re-frame/dispatch [::events/set-active-panel :misc-panel]))
+  (defroute "/how-code" []
+    (re-frame/dispatch [::events/set-active-panel :how-code-panel]))
   (defroute "/how-fp" []
     (re-frame/dispatch [::events/set-active-panel :how-fp-panel]))
   (defroute "/hoon-school-week-1" []
