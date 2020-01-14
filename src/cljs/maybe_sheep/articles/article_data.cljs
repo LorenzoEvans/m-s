@@ -105,5 +105,14 @@
      [:p.lh-copy.pt1.pb1.near-black "So, for those of us with long form appetites, 
         this particular section of my personal narrative begins many, 
         many years ago. Thought it will meander, I promise it will eventually lead us to the desired destinations."]
-     [:p.lh-copy.pt1.pb1.near-black "For all intents and purposes, I was very much never supposed to become a programmer, as I've always had a strong aptitude for and inclination towards the creative arts, chiefly music."]
-     [:p.lh-copy.pt1.pb1.near-black "Some of my brightest childhood memories revolve around songs, sounds, lyrics, modulations, arpeggios, the soundscape backdrop of hip hop records that mesmerized me, and by the time I hit double digits in age, I had very much dedicated myself to this craft, the writing of lyrics, raps, poems, haikus, strange incoherent fiction- yes, I had found my something in this life."]]]))
+     [:p.lh-copy.pt1.pb1.near-black "For all intents and purposes, I was very much never supposed to become a programmer, 
+            as I've always had a strong aptitude for and inclination towards the creative arts, chiefly music."]
+     [:p.lh-copy.pt1.pb1.near-black "Some of my brightest childhood memories revolve around songs, sounds, lyrics, modulations, arpeggios, 
+                  the soundscape backdrop of hip hop records that mesmerized me, and by the time I hit double digits in age, 
+                  I had very much dedicated myself to this craft, the writing of lyrics, raps, poems, haikus, strange incoherent fiction- yes, 
+                  I had found my something in this life."]]
+     [:blockquote.f3.bg-animate.hover-animate.hover-bg-washed-green.hover-purple.pa1.dark-gray.grow.animate.fw5.grow.bl.br.bw2.b--near-black.w-100.tc.flex.justify-around 
+     "For a more in depth rendition of those events, check out the next post:"
+      [:a.w-40.bb.bw3 {:class link-styling-x :href "#/how-lfp"} "How I Became A Functional Programmer"]]
+      [:div.w-100.bt.bw2.b--black.flex.justify-center
+      [:a.mv3 {:class link-styling-x :href "#/posts"} "Back to posts."]]]))
