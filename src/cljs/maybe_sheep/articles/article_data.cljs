@@ -99,10 +99,11 @@
       [twitter-anchor]
       [about-anchor]
       [misc-anchor]]
+     [:section.flex.flex-column.h-75.w-75 
      [:p.lh-copy.near-black.bb.bw2.w-100.f3.fw6.navy.bb.bw2.tc "How I Ended Up Programming"]
      [:p.lh-copy.pt1.pb1.near-black "TL;DR - I am still not entirely sure."]
      [:p.lh-copy.pt1.pb1.near-black "So, for those of us with long form appetites, 
         this particular section of my personal narrative begins many, 
         many years ago. Thought it will meander, I promise it will eventually lead us to the desired destinations."]
      [:p.lh-copy.pt1.pb1.near-black "For all intents and purposes, I was very much never supposed to become a programmer, as I've always had a strong aptitude for and inclination towards the creative arts, chiefly music."]
-     [:p.lh-copy.pt1.pb1.near-black "Some of my brightest childhood memories revolve around songs, sounds, lyrics, modulations, arpeggios, the soundscape backdrop of hip hop records that mesmerized me, and by the time I hit double digits in age, I had very much dedicated myself to this craft, the writing of lyrics, raps, poems, haikus, strange incoherent fiction- yes, I had found my something in this life."]]))
+     [:p.lh-copy.pt1.pb1.near-black "Some of my brightest childhood memories revolve around songs, sounds, lyrics, modulations, arpeggios, the soundscape backdrop of hip hop records that mesmerized me, and by the time I hit double digits in age, I had very much dedicated myself to this craft, the writing of lyrics, raps, poems, haikus, strange incoherent fiction- yes, I had found my something in this life."]]]))
