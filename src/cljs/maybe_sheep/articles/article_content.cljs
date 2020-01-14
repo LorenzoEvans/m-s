@@ -3,6 +3,10 @@
 
 (def content-store
   {:content (array-map
+             :how-code {:title "How I Ended Up Writing Code: The Prequel" :prev "spoiler alert: it involves bitcoin"
+                      :url "#/how-code-a-prequel"
+                      :panel-name :how-code
+                      :full-article [in-progress]}
              :how-fp  {:title "How I Ended Up A Functional Programmer"
                        :prev "One night, a little Haskell, and here we are."
                        :url "#/how-fp"
@@ -42,10 +46,6 @@
             ;                 :url "#/how-clojure"
             ;                 :panel-name :how-clojure
             ;                 :full-article [in-progress]}
-            ;  :how-code {:title "How I Ended Up Writing Code: The Prequel" :prev "spoiler alert: it involves bitcoin"
-            ;             :url "#/how-code-a-prequel"
-            ;             :panel-name :how-code
-            ;             :full-article [in-progress]}
             ;  :functional-fe {:title "My Preferred Front End Set Up" :prev "If you make me write CSS, it's going to be functional!"
             ;                  :url "#/functional-front-end"
             ;                  :panel-name :functional-fe
