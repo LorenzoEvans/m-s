@@ -9,7 +9,7 @@ html, body {
 }
 
 .bg-image {
-	background: url('../assets/arch2.jpeg');
+	background: url('../assets/synth3.jpeg');
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
@@ -80,19 +80,18 @@ span.m-sub {
   margin-left: 10%;
   width: 600px;
   height: 400px;
-  border: 3px solid gainsboro;
+  border: 3px solid rgb(211, 174, 174);
   box-shadow: 2px 2px 10px;
   justify-content: center;
-  /* transform: skew(20deg); */
-  /* transform: rotate3d(1, 0, 1, 50deg); */
-  /* background: url('./assets/doors.jpeg'); */
+  transform: skew(20deg);
+  background: gainsboro;
   
 }
 
 span#n-skew {
-  transform: skew(-10deg);
+  transform: skew(-20deg);
   /* border: 1px solid white; */
-  transform: rotate3d(-1, 1, -1, -50deg);
+  /* transform: rotate3d(-1, 1, -1, -50deg); */
 }
 
 /* .body {
@@ -129,9 +128,9 @@ span#n-skew {
 .c7 {
   background:  #A5D6A7 ;
 }
-.c1 {
+/* .c1 {
   background:  ;
 }
 .c1 {
   background:  ;
-}
+} */
