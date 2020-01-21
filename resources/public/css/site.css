@@ -77,7 +77,7 @@ span.m-sub {
 #p-gram {
   /* margin: 0 auto; */
   /* padding-top: 29.5px; */
-  margin-left: 10%;
+  /* margin-left: 10%; */
   width: 600px;
   height: 400px;
   border: 3px solid rgb(211, 174, 174);
@@ -134,3 +134,7 @@ span#n-skew {
 .c1 {
   background:  ;
 } */
+
+a.opacity {
+  opacity: 0.8 !important;
+}
