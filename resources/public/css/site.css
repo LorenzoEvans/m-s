@@ -19,14 +19,14 @@ html, body {
     /* z-index: 3; */
 }
 .bg-image-2 {
-	background: url('../assets/palms.jpeg');
+	background: url('../assets/circuit.jpeg');
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
     /* z-index: 3; */
 }
 .bg-image-3 {
-	background: url('../assets/bluepink.jpeg');
+	background: url('../assets/circuit3.jpeg');
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;

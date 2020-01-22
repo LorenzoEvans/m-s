@@ -10,7 +10,7 @@
 
 (defn github-anchor [] [:a.w-40.mono-gf.o-90.glow {:class link-styling-home :href "https://github.com/LorenzoEvans"} "Github"])
 (defn twitter-anchor [] [:a.w-40.mono-gf.o-90.glow {:class link-styling-home :href "https://twitter.com/0xLEDev"} "Twitter"])
-(defn posts-anchor [] [:a.w-40.mono-gf.o-90.glow {:class link-styling-home :href "#/posts"} "Posts"])
+(defn posts-anchor [] [:a.w-40.mono-gf.o-90.glow.tc {:class link-styling-home :href "#/posts"} "Maybe Posts"])
 (defn misc-anchor [] [:a.w-40.mono-gf.o-90.glow {:class link-styling-home :href "#/misc"} "Misc"])
 (defn arena-anchor [] [:a.w-40.mono-gf.o-90.glow {:class link-styling-home :href "https://www.are.na/bilnub-bollyx"} "Are.na"])
 (defn about-anchor [] [:a.w-40.mono-gf.o-90.glow {:class link-styling-home :href "#/about"} "About"])
