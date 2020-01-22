@@ -12,7 +12,7 @@
       [:section.f1.w-40.h4.tc.sub-m.bg-near-black.near-white.ma1.bw1.b--near-white.ba "Things that interest me"]]
      [:div.vh-100.flex.flex-column.flex-wrap.justify-around.w-100.self-center.overflow-scroll
       (for [item misc-items]
-       [:div.h-30.grow.ba.bw1.b--near-white.bw2.shadow-3.w-auto.ma1.bg-black-60
+       [:div.h-30.grow.ba.bw1.b--near-white.bw2.shadow-3.w-auto.ma3.bg-black-60
         [:section.f2.avenir.sub-m.tc.b--light-gray.truncate.near-white.w-100 (item :title)]
         [:div.pa2.f2.bw1.avenir.w-100.flex.flex-row
           [:div.f4.w-20.tc.self-center.washed-blue "Tags"]
