@@ -18,8 +18,14 @@
                   :bg "bg-washed-blue"}
                  {:title "Max Cooper"
                   :link "https://maxcooper.net" 
-                  :tags #{"music"}
+                  :tags #{"musician" "artist"}
                   :bg "c2"}
+                 {:title "DAT Protocol"
+                  :link "https://docs.datproject.org" 
+                  :tags #{"dec/dist"}}
+                 {:title "Beaker Browser"
+                  :link "https://beakerbrowser.com" 
+                  :tags #{"dec/dist" "application"}}
                  {:title "DAT Protocol"
                   :link "https://docs.datproject.org" 
                   :tags #{"dec/dist"}

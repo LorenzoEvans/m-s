@@ -3,20 +3,20 @@
 
 (def content-store
   {:content (array-map
-             :how-code {:title "How I Ended Up Writing Code: The Prequel" :prev "spoiler alert: it involves bitcoin"
-                      :url "#/how-code"
-                      :panel-name :how-code
-                      :full-article [in-progress]}
+            ;  :how-code {:title "How I Ended Up Writing Code: The Prequel" :prev "spoiler alert: it involves bitcoin"
+            ;           :url "#/how-code"
+            ;           :panel-name :how-code
+            ;           :full-article [in-progress]}
              :how-fp  {:title "How I Ended Up A Functional Programmer"
                        :prev "One night, a little Haskell, and here we are."
                        :url "#/how-fp"
                        :panel-name :how-fp
                        :full-article [how-fp]}
-             :how-lisp  {:title "Haskell's list of secrets"
-                        :prev "Hold on, wait, you mean like the speech impediment?"
-                        :url "#/how-lisp"
-                        :panel-name :how-lisp
-                        :full-article [in-progress]}
+            ;  :how-lisp  {:title "Haskell's list of secrets"
+            ;             :prev "Hold on, wait, you mean like the speech impediment?"
+            ;             :url "#/how-lisp"
+            ;             :panel-name :how-lisp
+            ;             :full-article [in-progress]}
             ;  :hoon-week-1 {:title "Hoon School: Week One" :prev "What the f#&% is thi-...oh my god it's amazing."
             ;                :url "#/hoon-school-week-1"
             ;                :panel-name :hoon-week-1
