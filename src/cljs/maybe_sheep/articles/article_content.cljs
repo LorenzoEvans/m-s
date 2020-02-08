@@ -1,5 +1,6 @@
 (ns maybe-sheep.articles.article-content
-  (:require [maybe-sheep.articles.article-data :refer [how-fp hoon-school-week-1 in-progress]]))
+  (:require [maybe-sheep.articles.article-data :refer [hoon-school-week-1 in-progress]]
+            [maybe-sheep.articles.how-fp :refer [how-fp]]))
 
 (def content-store
   {:content (array-map
