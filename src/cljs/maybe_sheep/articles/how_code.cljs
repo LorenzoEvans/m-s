@@ -39,7 +39,7 @@
        the Playstation 2, which was retailing at $299 in those days. That was a lot of money for my parents to put together at that time. 
        I had also just gotten a gameboy a year and a half prior for my birthday, and when your parents are working people, that's considered \"Still new\", 
        because \"You just got that thing\"- all of which are true, until you factor in a childs inability to grasp the relationship between lengths of time and the value of newfangled electronic devices. 
-       As had many a child before me, and as many a child after me has,I wore my parents down into a fine dust, by sheer dint of persistence,
+       As had many a child before me, and as many a child after me has, I wore my parents down into a fine dust, by sheer dint of persistence,
       at which point buying me the thing likely became worth it simply for the fact that they wouldn't have to hear about it again."]
      [:blockquote.f3.bg-animate.hover-animate.hover-bg-washed-green.hover-purple.pa1.dark-gray.grow.animate.fw5.grow.bl.br.bw2.b--near-black.w-100.tc.flex.justify-around] 
      "For a more in depth rendition of those events, check out the next post:"
