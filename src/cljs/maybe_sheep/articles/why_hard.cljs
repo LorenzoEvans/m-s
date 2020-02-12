@@ -1,17 +1,18 @@
 (ns maybe-sheep.articles.why-hard
   (:require [maybe-sheep.articles.article-data :refer [posts-anchor portfolio-anchor
                                                        github-anchor twitter-anchor
-                                                       about-anchor misc-anchor]]))
+                                                       about-anchor misc-anchor]]
+            [maybe-sheep.pages.homepage :refer [link-styling-x]]))
 
 (defn why-hard []
   [:p.avenir.flex.flex-column.pa4.justify-around.content-center.items-center.self-center
-   [:section.flex.flex-row.justify-between.w-100]
-   [posts-anchor]
-   [portfolio-anchor]
-   [github-anchor]
-   [twitter-anchor]
-   [about-anchor]
-   [misc-anchor]
+   [:section.flex.flex-row.justify-between.w-100
+    [posts-anchor]
+    [portfolio-anchor]
+    [github-anchor]
+    [twitter-anchor]
+    [about-anchor]
+    [misc-anchor]]
    [:section.flex.flex-column.h-75.w-75
   
     [:p.f3.fw6.navy.bb.bw2 "Why Programming Is Hard"]

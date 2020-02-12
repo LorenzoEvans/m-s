@@ -65,19 +65,19 @@
               :output-dir "target/cljsbuild/public/js/out"
               :source-map true
               :optimizations :none
-              :pretty-print  true}}
+              :pretty-print  true}}}}
 
 
 
-            }
-   }
+            
+   
 
   :figwheel
   {:http-server-root "public"
    :server-port 3449
    :nrepl-port 7002
-   :nrepl-middleware [cider.piggieback/wrap-cljs-repl
-                      ]
+   :nrepl-middleware [cider.piggieback/wrap-cljs-repl]
+                      
    :css-dirs ["resources/public/css"]
    :ring-handler maybe-sheep.handler/app}
 
@@ -91,13 +91,13 @@
                                   [prone "1.6.3"]
                                   [figwheel-sidecar "0.5.18"]
                                   [nrepl "0.6.0"]
-                                  [pjstadig/humane-test-output "0.9.0"]
+                                  [pjstadig/humane-test-output "0.9.0"]]
                                   
- ]
+ 
 
                    :source-paths ["env/dev/clj"]
-                   :plugins [[lein-figwheel "0.5.18"]
-]
+                   :plugins [[lein-figwheel "0.5.18"]]
+
 
                    :injections [(require 'pjstadig.humane-test-output)
                                 (pjstadig.humane-test-output/activate!)]

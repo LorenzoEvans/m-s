@@ -18,7 +18,7 @@
                         :prev "Most of us have been fed a false view of programming."
                         :url "#/why-programming-is-hard"
                         :panel-name :why-hard
-                        :full-article [why-hard]}
+                        :full-article [why-hard]})})
             ;  :dev-2020 {:title "Developer 2020: Conquering Goals"
             ;             :prev "...focus, committment, sheer will..."
             ;             :url "#dev-2020"
@@ -62,4 +62,4 @@
             ;                  :url "#/functional-front-end"
             ;                  :panel-name :functional-fe
             ;                  :full-article [in-progress]}
-             )})
+             
