@@ -1,7 +1,7 @@
 (ns maybe-sheep.articles.why-hard
-  (:require [maybe-sheep.articles.article-data :refer [posts-anchor portfolio-anchor]]
-    github-anchor twitter-anchor
-    about-anchor misc-anchor))
+  (:require [maybe-sheep.articles.article-data :refer [posts-anchor portfolio-anchor
+                                                       github-anchor twitter-anchor
+                                                       about-anchor misc-anchor]]))
 
 (defn why-hard []
   [:p.avenir.flex.flex-column.pa4.justify-around.content-center.items-center.self-center
