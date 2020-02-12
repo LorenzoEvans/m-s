@@ -1,6 +1,7 @@
 (ns maybe-sheep.articles.article-content
   (:require [maybe-sheep.articles.article-data :refer [hoon-school-week-1 in-progress]]
-            [maybe-sheep.articles.how-fp :refer [how-fp]]))
+            [maybe-sheep.articles.how-fp :refer [how-fp]]
+            [maybe-sheep.articles.why-hard :refer [why-hard]]))
 
 (def content-store
   {:content (array-map
@@ -13,11 +14,16 @@
                        :url "#/how-fp"
                        :panel-name :how-fp
                        :full-article [how-fp]}
-             :dev-2020 {:title "Developer 2020: Conquering Goals"
-                        :prev "...focus, committment, sheer will..."
-                        :url "#dev-2020"
-                        :panel-name :dev-2020
-                        :full-article [in-progress]}
+             :why-hard {:title "Why Programming Is Hard"
+                        :prev "Most of us have been fed a false view of programming."
+                        :url "#/why-programming-is-hard"
+                        :panel-name :why-hard
+                        :full-article [why-hard]}
+            ;  :dev-2020 {:title "Developer 2020: Conquering Goals"
+            ;             :prev "...focus, committment, sheer will..."
+            ;             :url "#dev-2020"
+            ;             :panel-name :dev-2020
+            ;             :full-article [in-progress]}
             ;  :how-lisp  {:title "Haskell's list of secrets"
             ;             :prev "Hold on, wait, you mean like the speech impediment?"
             ;             :url "#/how-lisp"

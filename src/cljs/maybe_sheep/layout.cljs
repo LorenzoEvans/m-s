@@ -8,6 +8,7 @@
    [maybe-sheep.pages.misc :refer [misc-page]]
    [maybe-sheep.articles.how-fp :refer [how-fp]]
    [maybe-sheep.articles.how-code :refer [how-code]]
+   [maybe-sheep.articles.why-hard :refer [why-hard]]
    ))
 
 
@@ -32,6 +33,7 @@
     :how-code-panel [how-code]
     :how-fp-panel [how-fp]
     :misc-panel [misc-page]
+    :why-hard-panel [why-hard]
     :hoon-school-week-1-panel [hoon-school-week-1]
     [:div]))
 

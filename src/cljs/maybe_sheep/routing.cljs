@@ -38,6 +38,8 @@
     (re-frame/dispatch [::events/set-active-panel :how-fp-panel]))
   (defroute "/hoon-school-week-1" []
     (re-frame/dispatch [::events/set-active-panel :hoon-school-week-1-panel]))
+  (defroute "/why-programming-is-hard" []
+    (re-frame/dispatch [::events/set-active-panel :why-hard-panel]))
   ; (defroute "/posts" []
   ;   (re-frame/dispatch [::events/set-active-panel :posts-panel]))
   ; (defroute "/posts" []
