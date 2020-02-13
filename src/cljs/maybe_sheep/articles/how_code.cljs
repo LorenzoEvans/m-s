@@ -1,7 +1,8 @@
 (ns maybe-sheep.articles.how-code
   (:require [maybe-sheep.articles.article-data :refer [posts-anchor portfolio-anchor
                                                        github-anchor twitter-anchor
-                                                       about-anchor misc-anchor]]))
+                                                       about-anchor misc-anchor]]
+            [maybe-sheep.pages.homepage :refer [link-styling-x]]))
 
 (defn how-code []
   (fn []

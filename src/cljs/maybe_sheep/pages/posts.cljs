@@ -14,4 +14,4 @@
                           ^{:key kw}
                           [:div.w-90.flex.flex-row.justify-center.ma2.shadow-3.ba.bw2.f3.bg-near-black.self-center
                            [:a.avenir.link.dim.near-white.truncate {:href url} title]]))]
-            [:a {:class link-styling-x :href "#/"} "Home"]]))
+            [:a.avenir {:class link-styling-x :href "#/"} "Home"]]))
