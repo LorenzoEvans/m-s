@@ -5,7 +5,7 @@
 (defn new-string [x]
   (clojure.string/replace x "." " "))
 
-(def link-styling-home (new-string "w-100.pa1.h-100.grow.bw1.f3.bg-moon-gray.w-75-m.hover-bg-dark-gray.bw1.b--near-black.flex.items-center.moon-gray.justify-center.glow.shadow-3.c1.hover-animate.bg-animate.hover-washed-red.hover-bg-near-white.background.o-90.hvr-bob.tracked"))
+(def link-styling-home (new-string "w-100.pa1.h-100.grow.bw1.f3.bg-moon-gray.w-75-m.hover-bg-dark-gray.bw1.b--near-black.flex.items-center.moon-gray.justify-center.glow.shadow-3.c1.hover-animate.bg-animate.hover-washed-red.hover-bg-near-white.background.o-90.hvr-bob.tracked.ttu"))
 (def link-styling-x (new-string "pa2.grow.bw1.w-40.ma1.f3.near-black.bg-near-white.w4.w-75-m.hover-bg-dark-gray.bb.bw3.br1.hover-washed-green.b--near-black.shadow-3.flex.items-center.justify-center"))
 
 (defn github-anchor [] [:a.w-100.mono-gf.glow {:class link-styling-home :href "https://github.com/LorenzoEvans"} "Github"])
