@@ -1,7 +1,8 @@
 (ns maybe-sheep.articles.how-fp
   (:require [maybe-sheep.articles.article-data :refer [posts-anchor portfolio-anchor
                                                        github-anchor twitter-anchor
-                                                       about-anchor misc-anchor]]))
+                                                       about-anchor misc-anchor]]
+            [maybe-sheep.pages.homepage :refer [link-styling-x]]))
 
 (defn how-fp []
   [:p.avenir.flex.flex-column.pa4.justify-around.content-center.items-center.self-center
@@ -14,7 +15,7 @@
     [misc-anchor]]
    [:section.flex.flex-column.h-75.w-75
   
-    [:p.f3.fw6.navy.bb.bw2 "How I Became a Functional Programmer"]
+    [:p.f1.fw6.navy.bb.bw2.tc.mb2 "How I Became a Functional Programmer"]
     [:div.lh-copy
      [:p.lh-copy.pt1.pb1.near-black 
       "The story starts about a year and a half ago, give or take a couple of months. I was enrolled in the Web Development track at Lambda, and was undergoing both the general struggles of learning to program, along with learning to program in JavaScript. To be quite honest, I'd developed (pun intended) quite a bit of frustration towards the language, one that was perhaps stoked by the long standing Dunning-Kruger effect. It seemed as if, right when I felt like I understood how JavaScript worked, some new syntactical quirk, change in the actual language, or unique concept would show up and leave me feeling confused all over again."] 
