@@ -42,7 +42,7 @@
      [:div.lh-copy.pt1.pb1.near-black "The answer involves the inspiration behind Haskell's list data structure, which, for a data structure that seemed quite normal, that I had such a long standing relationship with,
       having used lists in HTML, I couldn't have imagined the complexity that underlay this implementation of that data structure, and even more so, I couldn't imagine the simplicity."]
      [:div.lh-copy.pt1.pb1.near-black "The day programming introduced me to Haskell, is only superseded in importance by the day Haskell introduced me to Lisp."]
-     [:blockquote.f3.bg-animate.hover-animate.hover-bg-washed-green.hover-purple.pa1.dark-gray.grow.animate.fw5.grow.bl.br.bw2.b--near-black.w-100.tc.flex.justify-around "For a more in depth rendition of those events, check out the next post:"
-      [:a.w-40.bb.bw3 {:class link-styling-x :href "#/how-lisp"} "How I Ended Up Writing Lisp"]]]]
+     [:blockquote.f3.bg-animate.hover-animate.hover-bg-washed-green.hover-purple.pa1.dark-gray.grow.animate.fw5.grow.bl.br.bw2.b--near-black.w-100.tc.flex.justify-around "For a more in depth rendition of those events, stick around for the next post:"
+      [:a.w-40.bb.bw3 {:class link-styling-x :href "#"} "How I Ended Up Writing Lisp"]]]]
    [:div.w-100.bt.bw2.b--black.flex.justify-center
     [:a.mv3 {:class link-styling-x :href "#/posts"} "Back to posts."]]])
