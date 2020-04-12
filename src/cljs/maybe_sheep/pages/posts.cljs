@@ -1,9 +1,9 @@
 (ns maybe-sheep.pages.posts
   (:require 
-   [maybe-sheep.articles.article-content :refer [content-store]]
-   [maybe-sheep.pages.homepage :refer [link-styling-x]]))
+   [maybe-sheep.articles.article-content :as content]
+   [maybe-sheep.styles :as styles]))
 
-(def content-list (get-in content-store [:content]))
+(def content-list (get-in content/content-store [:content]))
 
 (defn posts-page []
   (fn []
@@ -14,4 +14,4 @@
                           ^{:key kw}
                           [:div.w-90.flex.flex-row.justify-center.ma2.shadow-3.ba.bw2.f3.bg-near-black.self-center
                            [:a.avenir.link.dim.near-white.truncate {:href url} title]]))]
-            [:a.avenir {:class link-styling-x :href "#/"} "Home"]]))
+            [:a.avenir {:class styles/link-styling-x :href "#/"} "Home"]]))

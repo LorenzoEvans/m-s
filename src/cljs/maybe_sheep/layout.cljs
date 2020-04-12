@@ -3,6 +3,7 @@
    [re-frame.core :as re-frame]
    [maybe-sheep.subs :as subs]
    [maybe-sheep.pages.homepage :refer [home-page]]
+   [maybe-sheep.articles.article_data :as article-data]
    [maybe-sheep.pages.about :refer [about-page]]
    [maybe-sheep.pages.posts :refer [posts-page]]
    [maybe-sheep.pages.misc :refer [misc-page]]
@@ -34,7 +35,7 @@
     :how-fp-panel [how-fp]
     :misc-panel [misc-page]
     :why-hard-panel [why-hard]
-    ; :hoon-school-week-1-panel [hoon-school-week-1]
+    :hoon-school-week-1-panel [article-data/hoon-school-week-1]
     [:div]))
 
 (defn show-panel [panel-name]

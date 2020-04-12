@@ -1,19 +1,17 @@
 (ns maybe-sheep.articles.why-hard
-  (:require [maybe-sheep.articles.article-data :refer [posts-anchor portfolio-anchor
-                                                       github-anchor twitter-anchor
-                                                       about-anchor misc-anchor]]
-            [maybe-sheep.pages.homepage :refer [link-styling-x]]))
+  (:require [maybe-sheep.pages.homepage :as home]
+            [maybe-sheep.styles :as styles]))
 
 (defn why-hard []
  (fn []
   [:p.avenir.flex.flex-column.pa4.justify-around.content-center.items-center.self-center.f4
    [:section.flex.flex-row.justify-between.w-100
-    [posts-anchor]
-    [portfolio-anchor]
-    [github-anchor]
-    [twitter-anchor]
-    [about-anchor]
-    [misc-anchor]]
+    [home/posts-anchor]
+    [home/portfolio-anchor]
+    [home/github-anchor]
+    [home/twitter-anchor]
+    [home/about-anchor]
+    [home/misc-anchor]]
    [:section.flex.flex-column.h-75.w-75
   
     [:p.f1.fw6.navy.bb.bw2.tc.mb2 "Why Programming Is Hard"]
@@ -62,4 +60,4 @@
      Mr. Robot doesn’t stand a chance."]
   
      [:div.w-100.bt.bw2.b--black.flex.justify-center
-      [:a.mv3 {:class link-styling-x :href "#/posts"} "Back to posts."]]]]]))
+      [:a.mv3 {:class styles/link-styling-x :href "#/posts"} "Back to posts."]]]]]))

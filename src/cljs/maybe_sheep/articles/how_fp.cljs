@@ -1,18 +1,16 @@
 (ns maybe-sheep.articles.how-fp
-  (:require [maybe-sheep.articles.article-data :refer [posts-anchor portfolio-anchor
-                                                       github-anchor twitter-anchor
-                                                       about-anchor misc-anchor]]
-            [maybe-sheep.pages.homepage :refer [link-styling-x]]))
+  (:require [maybe-sheep.pages.homepage :as home]
+            [maybe-sheep.styles :as styles]))
 
 (defn how-fp []
   [:p.avenir.flex.flex-column.pa4.justify-around.content-center.items-center.self-center
    [:section.flex.flex-row.justify-between.w-100
-    [posts-anchor]
-    [portfolio-anchor]
-    [github-anchor]
-    [twitter-anchor]
-    [about-anchor]
-    [misc-anchor]]
+    [home/posts-anchor]
+    [home/portfolio-anchor]
+    [home/github-anchor]
+    [home/twitter-anchor]
+    [home/about-anchor]
+    [home/misc-anchor]]
    [:section.flex.flex-column.h-75.w-75
   
     [:p.f1.fw6.navy.bb.bw2.tc.mb2 "How I Became a Functional Programmer"]
@@ -43,6 +41,6 @@
       having used lists in HTML, I couldn't have imagined the complexity that underlay this implementation of that data structure, and even more so, I couldn't imagine the simplicity."]
      [:div.lh-copy.pt1.pb1.near-black "The day programming introduced me to Haskell, is only superseded in importance by the day Haskell introduced me to Lisp."]
      [:blockquote.f3.bg-animate.hover-animate.hover-bg-washed-green.hover-purple.pa1.dark-gray.grow.animate.fw5.grow.bl.br.bw2.b--near-black.w-100.tc.flex.justify-around "For a more in depth rendition of those events, stick around for the next post:"
-      [:a.w-40.bb.bw3 {:class link-styling-x :href "#"} "How I Ended Up Writing Lisp"]]]]
+      [:a.w-40.bb.bw3 {:class styles/link-styling-x :href "#"} "How I Ended Up Writing Lisp"]]]]
    [:div.w-100.bt.bw2.b--black.flex.justify-center
-    [:a.mv3 {:class link-styling-x :href "#/posts"} "Back to posts."]]])
+    [:a.mv3 {:class styles/link-styling-x :href "#/posts"} "Back to posts."]]])

@@ -1,15 +1,6 @@
 (ns maybe-sheep.articles.article-data
-  (:require [maybe-sheep.pages.homepage :refer [link-styling-x]]))
+  (:require [maybe-sheep.styles :as styles]))
 
-(defn labs-article-data []
-  [:div "hi"])
-
-(defn github-anchor [] [:a.w-90.mono-gf {:class link-styling-x :href "https://github.com/LorenzoEvans"} "Github"])
-(defn twitter-anchor [] [:a.w-90.mono-gf {:class link-styling-x :href "https://twitter.com/0xLEDev"} "Twitter"])
-(defn posts-anchor [] [:a.w-90.mono-gf {:class link-styling-x :href "#/posts"} "Posts"])
-(defn misc-anchor [] [:a.w-90.mono-gf {:class link-styling-x :href "#/misc"} "Misc"])
-(defn about-anchor [] [:a.w-90.mono-gf {:class link-styling-x :href "#/about"} "About"])
-(defn portfolio-anchor [] [:a.w-90.mono-gf {:class link-styling-x :href "http://www.lorenzoevans.me/"} "Portfolio"])
 
 (defn in-progress []
   [:div.f-subheadline.avenir.fw5.tc.hover-bg-light-gray.hover-dark-pink.pa2.grow.ba.b--purple.bw2.br2 "Article :: In progress..."])

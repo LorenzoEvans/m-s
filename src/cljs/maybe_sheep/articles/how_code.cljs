@@ -1,19 +1,17 @@
 (ns maybe-sheep.articles.how-code
-  (:require [maybe-sheep.articles.article-data :refer [posts-anchor portfolio-anchor
-                                                       github-anchor twitter-anchor
-                                                       about-anchor misc-anchor]]
-            [maybe-sheep.pages.homepage :refer [link-styling-x]]))
+  (:require [maybe-sheep.pages.homepage :as home]
+            [maybe-sheep.styles :as styles]))
 
 (defn how-code []
   (fn []
     [:p.avenir.flex.flex-column.pa4.justify-around.content-center.items-center.self-center 
      [:section.flex.flex-row.justify-between.w-100
-      [posts-anchor]
-      [portfolio-anchor]
-      [github-anchor]
-      [twitter-anchor]
-      [about-anchor]
-      [misc-anchor]]
+      [home/posts-anchor]
+      [home/portfolio-anchor]
+      [home/github-anchor]
+      [home/twitter-anchor]
+      [home/about-anchor]
+      [home/misc-anchor]]
      [:section.flex.flex-column.h-75.w-75] 
      [:p.lh-copy.near-black.bb.bw2.w-100.f3.fw6.navy.bb.bw2 "How I Ended Up Programming"]
      [:p.lh-copy.near-black "TL;DR - I am still not entirely sure."]
@@ -44,6 +42,6 @@
       at which point buying me the thing likely became worth it simply for the fact that they wouldn't have to hear about it again."]
      [:blockquote.f3.bg-animate.hover-animate.hover-bg-washed-green.hover-purple.pa1.dark-gray.grow.animate.fw5.grow.bl.br.bw2.b--near-black.w-100.tc.flex.justify-around] 
      "For a more in depth rendition of those events, check out the next post:"
-      [:a.w-40.bb.bw3 {:class link-styling-x :href "#/how-lfp"} "How I Became A Functional Programmer"]
+      [:a.w-40.bb.bw3 {:class styles/link-styling-x :href "#/how-lfp"} "How I Became A Functional Programmer"]
       [:div.w-100.bt.bw2.b--black.flex.justify-center]
-      [:a.mv3 {:class link-styling-x :href "#/posts"} "Back to posts."]]))
+      [:a.mv3 {:class styles/link-styling-x :href "#/posts"} "Back to posts."]]))
