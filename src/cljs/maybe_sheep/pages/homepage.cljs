@@ -32,8 +32,7 @@
     [github-anchor]
     [twitter-anchor]
     [about-anchor]
-    [misc-anchor]
-    [arena-anchor]]
+    [misc-anchor]]
    [:div#p-gram {:class outer-title}
     [:span#n-skew.hover-washed-green {:class title-synths} "s[Y]nths"] 
     [:span#n-skew.hover-navy {:class title-for} "f0r"] 
