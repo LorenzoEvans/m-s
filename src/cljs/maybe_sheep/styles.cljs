@@ -16,3 +16,6 @@
 
 (def post-page-container "flex flex-column justify-center content-center items-center w-100 overflow-scroll bw2 b--black bg-image-2 vh-100")
 (def flex-row-center "flex flex-row justify-center self-center w-100 overflow-scroll bw2 b--black bg-image-2vh-100")
+
+(def article-paragraph (new-string "lh-copy.pt1.pb1.near-black"))
+(def code-highlights (new-string "f3.bg-animate.hover-animate.hover-bg-washed-green.hover-purple.pa1.dark-gray.grow.animate.fw5.grow.bl.br.bw2.b--near-black.w-100.tc"))
