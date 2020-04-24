@@ -13,8 +13,7 @@
     [home/about-anchor]
     [home/misc-anchor]]
    [:section.flex.flex-column.h-75.w-75
-  
-    [:p.f1.fw6.navy.bb.bw2.tc.mb2 "Why Programming Is Hard"]
+    [:p.f1.fw6.navy.bb.bw2.tc.mb2 "Why Programming Is Hard"]]
     [:div.lh-copy
      "In my journey as a software developer, I’ve learned that, surprise surprise, learning how to program (well), is very difficult, in a way that I don’t quite believe many other things are, and began to get very curious about why this difficulty is so unique. I’ve noticed that the reputation of the difficulty of programming preceeds it, and leads some people to preclude it as a skill, hobby, or past-time that they can pick up, and become competent at." 
      [:p {:class styles/article-paragraph} "I’ve tried to pitch programming to a few friends, mostly mechanics and audio-engineers, given that their current hobby is at least technical enough (seriously, properly mixing layered audio so that the low end of an 808 doesn’t distort a particularly thick synth pad is no joke), that I felt they wouldn’t have as much of a problem transitioning into this field, as people who’ve never dealt with anything technical, mechanical, electronic, etc, or perhaps aren’t innately inclined towards those things."] 
@@ -59,4 +58,4 @@
      Mr. Robot doesn’t stand a chance."]
   
      [:div.w-100.bt.bw2.b--black.flex.justify-center
-      [:a.mv3 {:class styles/link-styling-x :href "#/posts"} "Back to posts."]]]]]))
+      [:a.mv3 {:class styles/link-styling-x :href "#/posts"} "Back to posts."]]]]))
