@@ -35,7 +35,7 @@
     :how-fp-panel [how-fp]
     :misc-panel [misc-page]
     :why-hard-panel [why-hard]
-    :hoon-school-week-1-panel [article-data/hoon-school-week-1]
+    :hoon-school [article-data/hoon-school-week-1]
     [:div]))
 
 (defn show-panel [panel-name]
