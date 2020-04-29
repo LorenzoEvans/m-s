@@ -56,6 +56,5 @@
      [:blockquote.f2.i.grow.bg-animate.hover-animate.hover-bg-dark-gray.hover-light-green.pa1.dark-gray.tc "Hard work beats talent if talent doesn’t work hard."]
      [:p {:class styles/article-paragraph}.f3.tc "If you’re willing to work hard, you have my vote of confidence.
      Mr. Robot doesn’t stand a chance."]
-  
      [:div.w-100.bt.bw2.b--black.flex.justify-center
       [:a.mv3 {:class styles/link-styling-x :href "#/posts"} "Back to posts."]]]]))
